@@ -5,7 +5,7 @@ class Foot extends Component {
   render() {
     return (
       <Flexbox element="footer" height="60px">
-        Footer
+        Foot
       </Flexbox>
     );
   }
