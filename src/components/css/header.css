@@ -1,0 +1,45 @@
+.header{
+  background:none repeat scroll 0 0 #2196f3;
+  border:none;
+}
+.navbar-default{background-color:#2196f3}
+
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{color:#0069c0}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{color:#0069c0}
+
+.navbar-collapse{
+  width: 85%;
+}
+.navbar-header{
+  width:10%;
+  color:#fff;
+  border:none;
+}
+
+.navbar-brand{
+  color:#fff;
+}
+
+
+/* unvisited link */
+a:link {
+  color: #2196f3;
+}
+
+/* visited link */
+a:visited {
+  color: #0069c0;
+
+}
+
+/* mouse over link */
+a:hover {
+  color: #0069c0;
+
+}
+
+/* selected link */
+a:active {
+  color: #0000FF;
+}

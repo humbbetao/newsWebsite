@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Content from './components/Content';
 import Header from './components/Header';
-import Foot from './components/Foot';
+import Footer from './components/Footer';
 import Flexbox from 'flexbox-react';
 
 class App extends Component {
@@ -15,7 +15,7 @@ class App extends Component {
     dataSource: undefined,
     news: [],
   };
-
+  
   render() {
     console.log(this.state.dataSource);
     return (
@@ -24,7 +24,7 @@ class App extends Component {
         minHeight="100vh"     >
         <Header />
         <Content />
-        <Foot />
+        <Footer />
       </Flexbox>
     );
   }
