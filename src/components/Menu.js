@@ -4,6 +4,7 @@ import Logo from './Logo';
 import MenuItens from './MenuItens';
 import BarSearch from './BarSearch';
 
+
 class Menu extends Component {
     constructor(props) {
         super(props);
@@ -23,9 +24,9 @@ class Menu extends Component {
     render() {
         return (
             <Flexbox flexDirection="rows"   >
-                <Logo />
-                <MenuItens list={this.state.listItensMenu} />
-                <BarSearch />
+                    <Logo />
+                    <MenuItens list={this.state.listItensMenu} />
+                    <BarSearch />
             </Flexbox>
         );
     }

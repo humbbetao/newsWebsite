@@ -13,6 +13,7 @@
     "path": "^0.12.7",
     "prettier": "^1.8.2",
     "react": "^16.1.1",
+    "react-bootstrap": "^0.31.5",
     "react-dom": "^16.1.1",
     "react-flexbox-grid": "^2.0.0",
     "react-scripts": "1.0.17",

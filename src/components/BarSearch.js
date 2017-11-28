@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
 import Flexbox from 'flexbox-react';
-import './header.css'
 
 
 class BarSearch extends Component {
     render() {
         return (
-            <div>
-                <a className="search_icon" href="#">
-                    <i className="fa fa-search"></i>
-                </a>
-            </div>
-
+            <form class="navbar-form navbar-right">
+                <div className="input-group">
+                    <input type="text" className="form-control" placeholder="Type your search" aria-describedby="sizing-addon1" />
+                    <span className="input-group-btn">
+                        <button className="btn btn-default" type="button">Search</button>
+                    </span>
+                </div>
+            </form>
         );
     }
 }

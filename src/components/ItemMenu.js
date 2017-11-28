@@ -11,7 +11,7 @@ class Menu extends Component {
 
     render() {
         return (
-            <li><a href={this.props.url}> {this.props.itemName}</a></li>
+            <li className="active"><a href={this.props.url}> {this.props.itemName}</a></li>
         );
     }
 }

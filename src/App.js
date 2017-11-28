@@ -4,9 +4,6 @@ import Header from './components/Header';
 import Foot from './components/Foot';
 import Flexbox from 'flexbox-react';
 
-
-var DOMParser = require('xmldom').DOMParser;
-
 class App extends Component {
   constructor(props) {
     super(props);
@@ -24,9 +21,7 @@ class App extends Component {
     return (
       <Flexbox
         flexDirection="column"
-        minHeight="100vh"
-        alignItems="center"
-        >
+        minHeight="100vh"     >
         <Header />
         <Content />
         <Foot />

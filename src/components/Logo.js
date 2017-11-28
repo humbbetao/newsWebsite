@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Flexbox from 'flexbox-react';
-import './header.css';
 
 class Logo extends Component {
     constructor(props) {
@@ -11,7 +10,7 @@ class Logo extends Component {
         return (
             <div className="navbar-header">
                 <a className="navbar-brand" href="index.html">
-                    <img src={require('./img/logo.png')} alt="" />
+                    News Cyber
                 </a>
             </div>
         );
