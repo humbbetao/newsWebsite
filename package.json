@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "flexbox-react": "^4.4.0",
     "husky": "^0.14.3",
     "lint-staged": "^5.0.0",
     "prettier": "^1.8.2",
