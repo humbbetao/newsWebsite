@@ -5,7 +5,7 @@ import './header.css';
 class ListItensMenu extends Component {
     constructor(props) {
         super(props);
-        state.list=this.props.list;
+      
     }
     
     state={
