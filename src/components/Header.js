@@ -6,13 +6,13 @@ import './header.css';
 class Header extends Component {
   render() {
     return (
-      <Flexbox
-        element="header"
-        height="60px">
+      <nav class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container">
         <Menu/>
-         
-      </Flexbox>
-        );
+
+        </div>
+      </nav>
+    );
   }
 }
 

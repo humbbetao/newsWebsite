@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import './App.css';
 import Content from './components/Content';
 import Header from './components/Header';
 import Foot from './components/Foot';
 import Flexbox from 'flexbox-react';
+
+
 var DOMParser = require('xmldom').DOMParser;
 
 class App extends Component {
@@ -22,9 +23,10 @@ class App extends Component {
     console.log(this.state.dataSource);
     return (
       <Flexbox
-        flexDirection="rows"
+        flexDirection="column"
         minHeight="100vh"
-        alignItems="center">
+        alignItems="center"
+        >
         <Header />
         <Content />
         <Foot />

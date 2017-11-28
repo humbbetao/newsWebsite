@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import Flexbox from 'flexbox-react';
-import './header.css';
 import Logo from './Logo';
-import ListItensMenu from './ListItensMenu';
+import MenuItens from './MenuItens';
 import BarSearch from './BarSearch';
 
 class Menu extends Component {
@@ -12,21 +11,22 @@ class Menu extends Component {
 
     state = {
         listItensMenu: [
-            'Home',
-            'Technology',
-            'Laptops',
-            'Tablets',
-            'Contact Us',
+            { nome: 'Home', url: 'index.html' },
+            { nome: 'Technology', url: 'technology.html' },
+            { nome: 'Mobile', url: 'mobile.html' },
+            { nome: 'Laptops', url: 'laptops.html' },
+            { nome: 'Tablets', url: 'tablets.html' },
+            { nome: 'Contact Us', url: 'contactus.html' },
         ],
     };
 
     render() {
         return (
-            <nav className="navbar navbar-default navbar-static-top" role="navigation">
+            <Flexbox flexDirection="rows"   >
                 <Logo />
-                <ListItensMenu list={this.state.listItensMenu} />
+                <MenuItens list={this.state.listItensMenu} />
                 <BarSearch />
-            </nav>
+            </Flexbox>
         );
     }
 }

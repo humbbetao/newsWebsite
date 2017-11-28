@@ -1,0 +1,40 @@
+.container{
+    background:none repeat scroll 0 0 #12a3df;
+    height: 65px;
+    width:90%;
+  }
+.content {
+    font-size: 15px;
+    text-align: center;
+  }
+.imgLogo{
+  width: 200px;
+  height: 200px;
+
+}
+
+.navbar-default{background-color:#12a3df; border-color:#12a3df}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{color:#12a3df}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{color:#12a3df}
+.dropdown-menu{background-color:#12a3df}
+.dropdown-menu li a:hover, .dropdown-menu li a:focus{color:#12a3df}
+.dropdown-menu li a:hover, .dropdown-menu li a:focus{color:#12a3df}
+.search_icon i{color:#12a3df}
+.search_bar{border:2px solid #12a3df}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{background-color:#12a3df}
+
+#header{box-shadow:0 0 8px 5px rgba(0,0,0,0.2); display:inline; float:left; left:0; position:fixed; right:0; top:0; width:100%; z-index:100}
+.navbar{margin-bottom:0}
+.custom_nav li a{}
+.navbar-default .navbar-nav > li > a{color:#fff; -webkit-transition:all 0.5s; -moz-transition:all 0.5s; -ms-transition:all 0.5s; -o-transition:all 0.5s; transition:all 0.5s}
+.navbar-default .navbar-brand{color:#fff; font-weight:bold; font-family:'Allerta',Helvetica,Arial,sans-serif; padding:0px 15px}
+.navbar-default .navbar-brand img:hover{opacity:1}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{background-color:#fff}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{background-color:#fff}
+.dropdown-menu li a{color:#fff}
+.navbar-collapse{float:left; position:relative; width:86%}
+.search{float:right; position:relative}
+.search_icon i{background:none repeat scroll 0 0 #fff; display:block; float:right; height:30px; line-height:30px; margin-top:10px; text-align:center; width:30px}
+.search_bar{display:inline; height:45px; padding:10px; position:absolute; right:0; top:52px; width:250px; display:none}
+.navbar-default .navbar-toggle{border-color:#fff}
+.navbar-default .navbar-toggle .icon-bar{background-color:#fff}
