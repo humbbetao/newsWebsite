@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 import Flexbox from 'flexbox-react';
 import Slider from './Content/Slider';
 import BodyNews from './Content/BodyNews';
+import './content.css'
 
 const urlForSearch = tema =>
   'https://newsapi.org/v2/everything?q=bitcoin&sortBy=publishedAt&apiKey=af3f0e77d1854d8fa72af41d447582fe'
 
-  class Content extends Component {
+class Content extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -58,10 +59,10 @@ const urlForSearch = tema =>
   render() {
 
     return (
-      <Flexbox flexGrow={1}>
-        <Slider/>
-        <BodyNews/>
-      </Flexbox>
+      <div className="content">
+        <Slider />
+        <BodyNews />
+      </div>
     );
   }
 }

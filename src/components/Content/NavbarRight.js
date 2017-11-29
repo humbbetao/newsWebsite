@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
-
+import './bodyNews.css'
 class NavbarRight extends Component {
     render() {
 
         return (
-            <p>right</p>
+            <div>
+                teste
+            </div>
         );
     }
 }

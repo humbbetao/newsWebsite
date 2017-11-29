@@ -9,8 +9,7 @@ class Home extends Component {
          {/* Single Page Application */}
         return (
             <Flexbox
-                flexDirection="column"
-                minHeight="100vh"     >
+                flexDirection="column"    >
                 {/*Cabecalho*/}
                 <Header />
                 {/*Corpo*/}

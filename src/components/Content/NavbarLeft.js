@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import './bodyNews.css'
 
 class NavbarLeft extends Component {
     render() {
 
         return (
-            <p>left</p>
+            <p>teste</p>
         );
     }
 }
