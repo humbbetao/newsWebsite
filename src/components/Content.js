@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Flexbox from 'flexbox-react';
+import Slider from './Content/Slider';
+import BodyNews from './Content/BodyNews';
 
 const urlForSearch = tema =>
   'https://newsapi.org/v2/everything?q=bitcoin&sortBy=publishedAt&apiKey=af3f0e77d1854d8fa72af41d447582fe'
@@ -57,7 +59,8 @@ const urlForSearch = tema =>
 
     return (
       <Flexbox flexGrow={1}>
-
+        <Slider/>
+        <BodyNews/>
       </Flexbox>
     );
   }
