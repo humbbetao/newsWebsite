@@ -1,45 +1,66 @@
-.header{
-  background:none repeat scroll 0 0 #2196f3;
-  border:none;
-}
-.navbar-default{background-color:#2196f3}
-
-
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{color:#0069c0}
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{color:#0069c0}
-
 .navbar-collapse{
   width: 85%;
+  color:#455a64;
 }
 .navbar-header{
   width:10%;
+  background-color:#455a64;
   color:#fff;
-  border:none;
+ border:none;
+  border-radius: 0;
+}
+.navbar-collapse li{
+  background-color: #455a64;
 }
 
+.navbar-collapse li a:link{
+  background-color: #455a64;
+}
+
+.navbar-collapse li a:hover{
+  background-color: #1c313a;
+}
+
+.navbar-collapse li a:active > .navbar-collapse li { 
+  background-color: #1c313a;
+}
 .navbar-brand{
   color:#fff;
 }
 
 
-/* unvisited link */
-a:link {
-  color: #2196f3;
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #1c313a;
+  overflow: hidden;
+  border:none;
+  border-radius: 0;
 }
 
-/* visited link */
-a:visited {
-  color: #0069c0;
-
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
-/* mouse over link */
-a:hover {
-  color: #0069c0;
-
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
-/* selected link */
-a:active {
-  color: #0000FF;
+/* Add an active class to highlight the current page */
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
 }

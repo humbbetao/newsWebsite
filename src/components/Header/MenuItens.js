@@ -14,6 +14,7 @@ class MenuItens extends Component {
         return (
             <ul className="nav navbar-nav navbar-collapse">
                 {this.props.list.map((item, id) =>
+                  
                     <ItemMenu key={id} itemName={item.nome} url={item.url} />
                 )}
             </ul>

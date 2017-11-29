@@ -7,7 +7,7 @@ import './css/header.css';
 class Header extends Component {
   render() {
     return (
-      <nav className="navbar navbar-default header">
+      <nav className="navbar topnav">
         <div className="container-fluid">
           <Menu />
         </div>

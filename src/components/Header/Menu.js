@@ -3,7 +3,7 @@ import Flexbox from 'flexbox-react';
 import Logo from './Logo';
 import MenuItens from './MenuItens';
 import BarSearch from './BarSearch';
-  
+
 
 class Menu extends Component {
     constructor(props) {
@@ -12,8 +12,8 @@ class Menu extends Component {
 
     state = {
         listItensMenu: [
-            { nome: 'Home', url: 'index.html' },
-            { nome: 'About', url: 'about.html' },
+            { nome: 'Home', url: '/' },
+            { nome: 'Blog', url: 'blog' },
             { nome: 'Mobile', url: 'mobile.html' },
             { nome: 'Laptops', url: 'laptops.html' },
             { nome: 'Tablets', url: 'tablets.html' },
@@ -23,10 +23,10 @@ class Menu extends Component {
 
     render() {
         return (
-            <Flexbox flexDirection="rows"   >   
-                    <Logo />
-                    <MenuItens list={this.state.listItensMenu} />
-                    <BarSearch />
+            <Flexbox flexDirection="rows"   >
+                <Logo />
+                <MenuItens list={this.state.listItensMenu} />
+                <BarSearch />
             </Flexbox>
         );
     }

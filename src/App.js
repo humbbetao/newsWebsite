@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
+import Home from './components/Home';
 import Content from './components/Content';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Blog from './components/Blog';
 import Flexbox from 'flexbox-react';
+import {Router, Route, hashHistory, IndexRoute } from 'react-router';
 
 class App extends Component {
   constructor(props) {
     super(props);
-
   }
 
   state = {
@@ -17,15 +17,13 @@ class App extends Component {
   };
   
   render() {
-    console.log(this.state.dataSource);
     return (
-      <Flexbox
-        flexDirection="column"
-        minHeight="100vh"     >
-        <Header />
-        <Content />
-        <Footer />
-      </Flexbox>
+      <Router  history={hashHistory}>
+        <Route path="/" component={Home}>
+          <IndexRoute  path="/" component={Content}/>
+          <Route path="blog" component={Blog}/>
+        </Route>
+      </Router>
     );
   }
 }
