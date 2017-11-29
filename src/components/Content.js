@@ -1,49 +1,63 @@
 import React, { Component } from 'react';
 import Flexbox from 'flexbox-react';
-class Content extends Component {
 
+const urlForSearch = tema =>
+  'https://newsapi.org/v2/everything?q=bitcoin&sortBy=publishedAt&apiKey=af3f0e77d1854d8fa72af41d447582fe'
+
+  class Content extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      requestFailed: false,
+      status: undefined,
+      news: [{
+        source: {
+          id: null,
+          name: "",
+        },
+        author: "",
+        title: "",
+        description: "",
+        url: "",
+        urlToImage: "",
+        publishedAt: ""
+      }]
+    }
+  }
   componentDidMount() {
-    var FeedParser = require('feedparser');
-    var request = require('request'); // for fetching the feed
+    console.log(urlForSearch('Brazil'));
+    fetch(urlForSearch('Brazil'))
+      .then(response => {
+        if (!response.ok) {
+          throw Error("Network request failed")
+        }
 
-    var req = request('https://newsapi.org/v2/everything?q=bitcoin&sortBy=publishedAt&apiKey=af3f0e77d1854d8fa72af41d447582fe')
-    var feedparser = new FeedParser([]);
+        return response
+      })
+      .then(d => d.json())
+      .then(d => {
+        console.log(JSON.stringify(d));
 
-    req.on('error', function (error) {
-      // handle any request errors
-    });
+        console.log(d.status);
+        console.log(d.articles);
 
-    req.on('response', function (res) {
-      var stream = this; // `this` is `req`, which is a stream
+        this.setState({
+          status: d.status,
+          news: d.articles
 
-      if (res.statusCode !== 200) {
-        this.emit('error', new Error('Bad status code'));
-      }
-      else {
-        stream.pipe(feedparser);
-      }
-    });
-
-    feedparser.on('error', function (error) {
-      // always handle errors
-    });
-
-    feedparser.on('readable', function () {
-      // This is where the action is!
-      var stream = this; // `this` is `feedparser`, which is a stream
-      var meta = this.meta; // **NOTE** the "meta" is always available in the context of the feedparser instance
-      var item;
-
-      while (item = stream.read()) {
-        console.log(item);
-      }
-    });
+        })
+      }, () => {
+        this.setState({
+          requestFailed: true
+        })
+      })
   }
 
   render() {
+
     return (
       <Flexbox flexGrow={1}>
-        Content
+
       </Flexbox>
     );
   }
