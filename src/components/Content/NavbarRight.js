@@ -4,8 +4,9 @@ class NavbarRight extends Component {
     render() {
 
         return (
-            <div>
-                teste
+            <div class="single_widget">
+                <h2>Popular Post</h2>
+
             </div>
         );
     }

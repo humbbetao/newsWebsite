@@ -6,17 +6,10 @@ import './bodyNews.css'
 class BodyNews extends Component {
     render() {
         return (
-            <div>
-                <div className="col-md-3 navbarLeft">
-                    <NavbarLeft />
-                </div>
-                <div className="col-md-3 lastNews">
-                    <LastNews />
-                </div>
-                <div className="col-md-3 navbarRight">
-                    <NavbarRight />
-                </div>
-
+            <div class="row">
+                <NavbarLeft />
+                <LastNews />
+                <NavbarRight />
             </div >
         );
     }

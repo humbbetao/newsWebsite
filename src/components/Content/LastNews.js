@@ -5,9 +5,9 @@ class LastNews extends Component {
     render() {
 
         return (
-            <div>
+            <div class="col-lg-6 col-md-6 col-sm-8">
                 teste
-           </div>
+            </div>
         );
     }
 }

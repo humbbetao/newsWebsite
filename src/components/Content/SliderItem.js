@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './slide.css'
-import './slick.css'
 class SliderItem extends Component {
     render() {
 

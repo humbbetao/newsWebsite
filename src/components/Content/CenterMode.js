@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import SliderItem from './SliderItem';
 import './slide.css'
-import Slider from 'react-slick';
+import Slider from 'react-slick';   
 
 class CenterMode extends Component {
 
