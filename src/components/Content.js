@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Flexbox from 'flexbox-react';
-import Slider from './Content/Slider';
+import CenterMode from './Content/CenterMode';
 import BodyNews from './Content/BodyNews';
 import './content.css'
 
@@ -60,7 +60,7 @@ class Content extends Component {
 
     return (
       <div className="content">
-        <Slider />
+        <CenterMode />
         <BodyNews />
       </div>
     );
