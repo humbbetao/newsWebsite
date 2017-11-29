@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
-import Flexbox from 'flexbox-react';
 
 class Logo extends Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <div className="navbar-header">

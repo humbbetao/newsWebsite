@@ -6,9 +6,6 @@ import BarSearch from './BarSearch';
 
 
 class Menu extends Component {
-    constructor(props) {
-        super(props);
-    };
 
     state = {
         listItensMenu: [
@@ -23,7 +20,7 @@ class Menu extends Component {
 
     render() {
         return (
-            <Flexbox flexDirection="rows"   >
+            <Flexbox flexDirection="row" >
                 <Logo />
                 <MenuItens list={this.state.listItensMenu} />
                 <BarSearch />
