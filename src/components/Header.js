@@ -5,10 +5,8 @@ import './css/header.css';
 class Header extends Component {
   render() {
     return (
-      <nav className="navbar topnav">
-        <div className="container-fluid">
+      <nav className=" topnav">
           <Menu />
-        </div>
       </nav>
     );
   }

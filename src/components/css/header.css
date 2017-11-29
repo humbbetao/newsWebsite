@@ -1,9 +1,11 @@
 .navbar-collapse{
-  width: 85%;
+  width: 80%;
   color:#455a64;
+  border:0px;
+  margin:0px;
 }
 .navbar-header{
-  width:10%;
+  width:20%;
   background-color:#455a64;
   color:#fff;
  border:none;
@@ -26,6 +28,9 @@
 }
 .navbar-brand{
   color:#fff;
+}
+.navbar-right{
+  margin-right:1%;
 }
 
 
