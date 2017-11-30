@@ -10,10 +10,10 @@ class LastNews extends Component {
     render() {
 
         return (
-            <div class="col-lg-6 col-md-6 col-sm-8">
-                <div class="middle_content">
+            <div className="col-lg-6 col-md-6 col-sm-8">
+                <div className="middle_content">
                     <h2>What’s Hot</h2>
-                    <ListItem2 news ={this.props.news} />
+                    <ListItem2/>
                 </div>
             </div>
         );

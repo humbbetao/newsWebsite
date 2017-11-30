@@ -1,30 +1,33 @@
 import React, { Component } from 'react';
 import './itensListContaint.css'
 
-class ItensListContaint extends Component {
+class   ItensListContaint extends Component {
     constructor(props) {
         super(props);
     }
 
     render() {
-
+        // consle.log(this.props.new)
         return (
-            <li class="wow fadeInDown">
-                <article class="featured_article">
-                    <h2 class="article_title">
+            <li className="wow fadeInDown">
+                <article className="featured_article">
+                    <h2 className="article_title">
                         <a href="pages/single_page.html">
-                            {this.props.new.title}
+                            {this.props.new.webTitle}
                         </a>
-                        {this.props.new.author}
+                        
                     </h2>
-                    <div class="article_category">
+                    {this.props.new.webPublicationDate}
+                    <div className="article_category">
                         <a href="#">
-                            Technology
-                            <i class="fa fa-angle-right"></i>
+                        {this.props.new.sectionName}
+                            <i className="fa fa-angle-right"></i>
                         </a>
 
                     </div>
-                    <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a pharetra urna. Morbi dui lectus, pharetra nec elementum eget, vulputate ut nisi. Aliquam accumsan, nulla sed feugiat...</p>
+                    <p>
+                    {this.props.new.fields.bodyText}
+                    </p>
                 </article>
             </li>
         );

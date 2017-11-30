@@ -9,7 +9,7 @@ class BodyNews extends Component {
     }
     render() {
         return (
-            <div class="containerBody col-lg-12 col-md-12 col-sd-12">
+            <div className="containerBody col-lg-12 col-md-12 col-sd-12">
 
                 <NavbarLeft />
                 <LastNews news ={this.props.news} />

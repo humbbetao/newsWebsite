@@ -7,7 +7,7 @@ class ListItem extends Component {
 
         return (
 
-            <ul class="post_nav">
+            <ul className="post_nav">
                 <ItensNavbar />
                 <ItensNavbar />
                 <ItensNavbar />

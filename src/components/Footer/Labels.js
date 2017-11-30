@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 class Labels extends Component {
     render() {
         return (
-            <div class="footer_widget wow fadeInLeftBig">
+            <div className="footer_widget wow fadeInLeftBig">
                 <h2>Labels</h2>
-                <ul class="labels_nav">
+                <ul className="labels_nav">
                     <li><a href="#">Games</a></li>
                     <li><a href="#">Gallery</a></li>
                     <li><a href="#">Technology</a></li>

@@ -27,34 +27,34 @@ class Content extends Component {
       }]
     }
   }
-  componentDidMount() {
-    console.log(urlForSearch('Brazil'));
-    fetch(urlForSearch('Brazil'))
-      .then(response => {
-        if (!response.ok) {
-          throw Error("Network request failed")
-        }
+  // componentDidMount() {
+  //   console.log(urlForSearch('Brazil'));
+  //   fetch(urlForSearch('Brazil'))
+  //     .then(response => {
+  //       if (!response.ok) {
+  //         throw Error("Network request failed")
+  //       }
 
-        return response
-      })
-      .then(d => d.json())
-      .then(d => {
-        console.log(JSON.stringify(d));
+  //       return response
+  //     })
+  //     .then(d => d.json())
+  //     .then(d => {
+  //       // console.log(JSON.stringify(d));
 
-        console.log(d.status);
-        console.log(d.articles);
+  //       // console.log(d.status);
+  //       // console.log(d.articles);
 
-        this.setState({
-          status: d.status,
-          news: d.articles
+  //       this.setState({
+  //         status: d.status,
+  //         news: d.articles
 
-        })
-      }, () => {
-        this.setState({
-          requestFailed: true
-        })
-      })
-  }
+  //       })  
+  //     }, () => {
+  //       this.setState({
+  //         requestFailed: true
+  //       })
+  //     })
+  // }
 
   render() {
 
