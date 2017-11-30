@@ -6,7 +6,7 @@ class ListItem2 extends Component {
     render() {
 
         return (
-            <ul class="ppost_nav wow fadeInDown">
+            <ul className="ppost_nav wow fadeInDown navbarL">
                 <ItensListContaintBar />
                 <ItensListContaintBar />
                 <ItensListContaintBar />

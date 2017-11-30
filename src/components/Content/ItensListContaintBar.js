@@ -5,11 +5,17 @@ class ItensListContaintBar extends Component {
 
         return (
             <li>
-                <div class="media"><a class="media-left" href="pages/single_page.html"><img src="images/70x70.jpg" alt="" /></a>
-                    <div class="media-body"><a class="catg_title" href="#">Aliquam malesuada diam eget turpis varius</a></div>
+                <div className="media">
+                    <a className="media-left" href="pages/single_page.html">
+                        <img src={require('./teste4.jpg')} alt="" />
+                    </a>
+                    <div className="media-body">
+                        <a className="catg_title" href="#">
+                            Aliquam malesuada diam eget turpis varius
+                        </a>
+                    </div>
                 </div>
             </li>
-
         );
     }
 }

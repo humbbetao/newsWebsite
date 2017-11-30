@@ -8,8 +8,8 @@ class NavbarRight extends Component {
     render() {
 
         return (
-            <div class="col-lg-3 col-md-3 col-sm-12">
-                <div class="right_sidebar ">
+            <div className="col-lg-3 col-md-3 col-sm-12">
+                <div className="right_sidebar ">
                     <PopularPost />
                     <DemaisPost />
                     <CategoryAndLink/>

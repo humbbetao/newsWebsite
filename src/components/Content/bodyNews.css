@@ -38,3 +38,13 @@ figure.effect-lily figcaption.text_lilly{
 figure.effect-lily figcaption.text_lilly a{
     text-decoration: none;
 }
+
+.navbarL{
+    list-style: none;
+    padding: 0px;
+    margin: 5%;
+
+}
+.navbarL> li{
+    margin-top: 5%;
+}
