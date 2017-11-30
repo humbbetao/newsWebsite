@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './bodyNews.css'
+import './lastNews.css'
 import ListItem2 from './LisItem2';
 
 class LastNews extends Component {

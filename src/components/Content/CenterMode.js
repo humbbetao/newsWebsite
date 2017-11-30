@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import SliderItem from './SliderItem';
 import './slide.css'
-import Slider from 'react-slick';   
+import Slider from 'react-slick';
 
 class CenterMode extends Component {
 
@@ -28,6 +28,9 @@ class CenterMode extends Component {
                     <SliderItem />
 
                 </Slider>
+                <div class="col-lg-12 col-md-12 col-sm-12 sliderBar">
+                    News
+                </div>
             </div>
         );
     }

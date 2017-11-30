@@ -1,0 +1,16 @@
+.left_sidebar{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.single_widget h2{
+    width: 100%;
+    padding:5%;
+    background-color: #FF8C00;
+    border-radius:5px;
+    font-size: 15pt;
+    color:#fff;
+
+}
+
+

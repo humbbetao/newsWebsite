@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import ListItem from './ListItem';
-import './bodyNews.css'
+import './navbarLeft.css'
 
 class NavbarLeft extends Component {
-    render() {
 
-        return (
-  
+    render() {
+        return (  
             <div class="col-lg-3 col-md-3 col-sm-4">
                 <div class="left_sidebar">
                     <div class="single_widget">

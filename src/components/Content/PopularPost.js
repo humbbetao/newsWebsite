@@ -6,7 +6,7 @@ class PopularPost extends Component {
     render() {
 
         return (
-            <div class="single_widget">
+            <div class="single_widget_Right">
                 <h2>Popular Post</h2>
                 <ListItemPopularPost />
 

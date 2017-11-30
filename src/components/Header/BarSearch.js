@@ -4,12 +4,11 @@ class BarSearch extends Component {
     render() {
         return (
             <form className="navbar-form navbar-right">
-                <div className="input-group">
-                    <input type="text" className="form-control" placeholder="Type your search" aria-describedby="sizing-addon1" />
-                    <span className="input-group-btn">
-                        <button className="btn btn-default" type="button">Search</button>
-                    </span>
+                <div className="container-1">
+                    <span className="icon"><i className="fa fa-search"></i></span>
+                    <input type="search" id="search" placeholder="Search..." />
                 </div>
+
             </form>
         );
     }

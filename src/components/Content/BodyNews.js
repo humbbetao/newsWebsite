@@ -6,7 +6,7 @@ import './bodyNews.css'
 class BodyNews extends Component {
     render() {
         return (
-            <div class="row">
+            <div class="containerBody col-lg-12 col-md-12 col-sd-12">
                 <NavbarLeft />
                 <LastNews />
                 <NavbarRight />

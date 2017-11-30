@@ -1,0 +1,8 @@
+.middle_content h2{
+    width: 100%;
+    padding:5%;
+    background-color: #0078D7;
+    border-radius:5px;
+    font-size: 15pt;
+    color:#fff;
+}
