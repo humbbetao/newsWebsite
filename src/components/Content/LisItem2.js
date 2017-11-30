@@ -3,7 +3,7 @@ import './bodyNews.css'
 import ItensListContaint from './ItensListContaint';
 
 const urlForSearch = tema =>
-    'http://content.guardianapis.com/search?order-by=newest&show-fields=bodyText&q=technology&api-key=4e95ee67-2a00-4f2b-a66a-f5288cf2934f'
+'http://content.guardianapis.com/search?show-elements=all&show-fields=all&q=technology&api-key=4e95ee67-2a00-4f2b-a66a-f5288cf2934f'
 
 class ListItem2 extends Component {
     constructor(props) {
@@ -11,31 +11,55 @@ class ListItem2 extends Component {
 
     }
     state = {
-        requestFailed: false,
-        status: undefined,
-        news: [{
-            //     author: "",
-            //     description: "",
-            //     publishedAt: "",
-            //     source: { id: "", name: "" },
-            //     title: "",
-            //     url: "",
-            //     urlToImage: ""
-            id: "",
-            type: "",
-            sectionId: "",
-            sectionName: "",
-            webPublicationDate: "",
-            webTitle: "",
-            webUrl: "",
-            apiUrl: "",
-            fields: {
-                bodyText: ""
-            },
-            isHosted: false,
-        }]
-
+        response: {
+            status: "",
+            userTier: "",
+            total: 0,
+            startIndex: 0,
+            pageSize: 0,
+            currentPage: 0,
+            pages: 0,
+            orderBy: "",
+            results: [
+                {
+                    id: "",
+                    type: "",
+                    sectionId: "",
+                    sectionName: "",
+                    webPublicationDate: "",
+                    webTitle: "",
+                    webUrl: "",
+                    apiUrl: "",
+                    fields: {
+                        headline: "",
+                        standfirst: "",
+                        trailText: "",
+                        byline: "",
+                        main: "",
+                        body: "",
+                        wordcount: "",
+                        firstPublicationDate: "",
+                        isInappropriateForSponsorship: "",
+                        isPremoderated: "",
+                        lastModified: "",
+                        productionOffice: "",
+                        publication: "",
+                        shortUrl: "",
+                        shouldHideAdverts: "",
+                        showInRelatedContent: "",
+                        thumbnail: "",
+                        legallySensitive: "",
+                        lang: "",
+                        bodyText: "",
+                        charCount: "",
+                        shouldHideReaderRevenue: ""
+                    },
+                    isHosted: false
+                }
+            ]
+        }
     }
+
     componentDidMount() {
         console.log(urlForSearch('Brazil'));
         fetch(urlForSearch('Brazil'))
@@ -48,17 +72,13 @@ class ListItem2 extends Component {
             })
             .then(d => d.json())
             .then(d => {
-                //  console.log(JSON.stringify(d));
-
-                // console.log(d.status);
-                // console.log(d.articles);
 
                 console.log(d.response.results),
-                this.setState({
-                    status: d.status,
-                    news: d.response.results
+                    // console.log(d.response.results),
+                    this.setState({
+                        response: d.response
 
-                })
+                    })
             }, () => {
                 this.setState({
                     requestFailed: true
@@ -70,7 +90,7 @@ class ListItem2 extends Component {
 
         return (
             <ul className="featured_nav">
-                {this.state.news.map((value, id) => {
+                {this.state.response.results.map((value, id) => {
                     return <ItensListContaint key={id} new={value} />
                 }
                 )}

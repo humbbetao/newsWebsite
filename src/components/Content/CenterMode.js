@@ -5,29 +5,29 @@ import Slider from 'react-slick';
 
 
 const urlForSearch = tema =>
-'https://newsapi.org/v2/top-headlines?sources=the-new-york-times&apiKey=af3f0e77d1854d8fa72af41d447582fe'
+    'https://newsapi.org/v2/top-headlines?fields=all&q=technology&apiKey=af3f0e77d1854d8fa72af41d447582fe'
 
 
 class CenterMode extends Component {
-constructor(props) {
-    super(props)
-    this.state = {
-        requestFailed: false,
-        status: undefined,
-        news: [{
-            source: {
-                id: null,
-                name: "",
-            },
-            author: "",
-            title: "",
-            description: "",
-            url: "",
-            urlToImage: "",
-            publishedAt: ""
-        }]
+    constructor(props) {
+        super(props)
+        this.state = {
+            requestFailed: false,
+            status: undefined,
+            news: [{
+                source: {
+                    id: null,
+                    name: "",
+                },
+                author: "",
+                title: "",
+                description: "",
+                url: "",
+                urlToImage: "",
+                publishedAt: ""
+            }]
+        }
     }
-}
 
     componentDidMount() {
         console.log(urlForSearch('Brazil'));
@@ -41,10 +41,12 @@ constructor(props) {
             })
             .then(d => d.json())
             .then(d => {
-                // console.log(JSON.stringify(d));
+                // console.log(d);
 
                 // console.log(d.status);
                 // console.log(d.articles);
+
+
 
                 this.setState({
                     status: d.status,
@@ -70,7 +72,7 @@ constructor(props) {
         return (
             <div className="slider">
                 <Slider {...settings}>
-                    {this.state.news.map((value, id) => 
+                    {this.state.news.map((value, id) =>
                         <SliderItem key={id} value={value} />
                     )}
                 </Slider>

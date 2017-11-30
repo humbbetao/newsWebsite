@@ -1,67 +1,99 @@
 import React, { Component } from 'react';
 import './bodyNews.css'
-import ItensListContaintBar from './ItensListContaintBar';
+import ItensPopularPost from './ItensPopularPost';
 
 const urlForSearch = tema =>
-    'https://newsapi.org/v2/top-headlines?sources=the-new-york-times&apiKey=af3f0e77d1854d8fa72af41d447582fe'
+    'http://content.guardianapis.com/search?section=technology&show-fields=all&q=videos&api-key=4e95ee67-2a00-4f2b-a66a-f5288cf2934f'
 
 class ListItemPopularPost extends Component {
     constructor(props) {
         super(props)
-        this.state = {
-            requestFailed: false,
-            status: undefined,
-            news: [{
-                author: "",
-                description: "",
-                publishedAt: "",
-                source: { id: "", name: "" },
-                title: "",
-                url: "",
-                urlToImage: ""
-            }]
 
-
+    }
+    state = {
+        response: {
+            status: "",
+            userTier: "",
+            total: 0,
+            startIndex: 0,
+            pageSize: 0,
+            currentPage: 0,
+            pages: 0,
+            orderBy: "",
+            results: [
+                {
+                    id: "",
+                    type: "",
+                    sectionId: "",
+                    sectionName: "",
+                    webPublicationDate: "",
+                    webTitle: "",
+                    webUrl: "",
+                    apiUrl: "",
+                    fields: {
+                        headline: "",
+                        standfirst: "",
+                        trailText: "",
+                        byline: "",
+                        main: "",
+                        body: "",
+                        wordcount: "",
+                        firstPublicationDate: "",
+                        isInappropriateForSponsorship: "",
+                        isPremoderated: "",
+                        lastModified: "",
+                        productionOffice: "",
+                        publication: "",
+                        shortUrl: "",
+                        shouldHideAdverts: "",
+                        showInRelatedContent: "",
+                        thumbnail: "",
+                        legallySensitive: "",
+                        lang: "",
+                        bodyText: "",
+                        charCount: "",
+                        shouldHideReaderRevenue: ""
+                    },
+                    isHosted: false
+                }
+            ]
         }
     }
-    // componentDidMount() {
-    //     console.log(urlForSearch('Brazil'));
-    //     fetch(urlForSearch('Brazil'))
-    //         .then(response => {
-    //             if (!response.ok) {
-    //                 throw Error("Network request failed")
-    //             }
 
-    //             return response
-    //         })
-    //         .then(d => d.json())
-    //         .then(d => {
-    //             // console.log(JSON.stringify(d));
+    componentDidMount() {
+        console.log(urlForSearch('Brazil'));
+        fetch(urlForSearch('Brazil'))
+            .then(response => {
+                if (!response.ok) {
+                    throw Error("Network request failed")
+                }
 
-    //             // console.log(d.status);
-    //             console.log(d.articles);
+                return response
+            })
+            .then(d => d.json())
+            .then(d => {
 
-    //             this.setState({
-    //                 status: d.status,
+                console.log(d.response.results),
+                    // console.log(d.response.results),
+                    this.setState({
+                        response: d.response
 
-    //                 news: d.articles
-
-    //             })
-    //         }, () => {
-    //             this.setState({
-    //                 requestFailed: true
-    //             })
-    //         })
-    // }
+                    })
+            }, () => {
+                this.setState({
+                    requestFailed: true
+                })
+            })
+    }
 
     render() {
 
         return (
             <ul className="ppost_nav wow fadeInDown navbarL">
-                {this.state.news.map((value, id) => {
-                    return <ItensListContaintBar key={id} value={value} />
-                }
-                )}
+                {this.state.response.results.map((value, id) => {
+                    return <ItensPopularPost key={id} value={value} />
+                }  )}
+
             </ul>
         );
     }
