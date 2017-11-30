@@ -61,7 +61,7 @@ class Content extends Component {
     return (
       <div className="content">
         <CenterMode />
-        <BodyNews />
+        <BodyNews news={this.state.news} />
       </div>
     );
   }

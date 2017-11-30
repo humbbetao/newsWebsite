@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import './itensListContaint.css'
 
 class ItensListContaint extends Component {
+    constructor(props) {
+        super(props);
+    }
+
     render() {
 
         return (
@@ -9,9 +13,9 @@ class ItensListContaint extends Component {
                 <article class="featured_article">
                     <h2 class="article_title">
                         <a href="pages/single_page.html">
-                            Apple iPad Production Reaches 4 Million
+                            {this.props.new.title}
                         </a>
-
+                        {this.props.new.author}
                     </h2>
                     <div class="article_category">
                         <a href="#">

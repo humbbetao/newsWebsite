@@ -4,11 +4,15 @@ import NavbarRight from './NavbarRight';
 import LastNews from './LastNews';
 import './bodyNews.css'
 class BodyNews extends Component {
+    constructor(props){
+        super(props);
+    }
     render() {
         return (
             <div class="containerBody col-lg-12 col-md-12 col-sd-12">
+
                 <NavbarLeft />
-                <LastNews />
+                <LastNews news ={this.props.news} />
                 <NavbarRight />
             </div >
         );
