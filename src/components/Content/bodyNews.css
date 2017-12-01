@@ -48,3 +48,12 @@ figure.effect-lily figcaption.text_lilly a{
 .navbarL> li{
     margin-top: 5%;
 }
+.media-right{
+    width:50%;
+    height: 50%;
+    max-height: 100px;
+}
+.media-right>img {
+
+    height:20%;
+}

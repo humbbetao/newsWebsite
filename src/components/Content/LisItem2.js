@@ -73,7 +73,7 @@ class ListItem2 extends Component {
             .then(d => d.json())
             .then(d => {
 
-                console.log(d.response.results),
+                // console.log(d.response.results),
                     // console.log(d.response.results),
                     this.setState({
                         response: d.response

@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
 import './bodyNews.css'
 import ItensPopularPost from './ItensPopularPost';
-
-const urlForSearch = tema =>
-    'http://content.guardianapis.com/search?section=technology&show-fields=all&q=videos&api-key=4e95ee67-2a00-4f2b-a66a-f5288cf2934f'
+import SearchNews from './SearchNews';
 
 class ListItemPopularPost extends Component {
     constructor(props) {
         super(props)
-
     }
     state = {
         response: {
@@ -61,29 +58,10 @@ class ListItemPopularPost extends Component {
     }
 
     componentDidMount() {
-        console.log(urlForSearch('Brazil'));
-        fetch(urlForSearch('Brazil'))
-            .then(response => {
-                if (!response.ok) {
-                    throw Error("Network request failed")
-                }
-
-                return response
-            })
-            .then(d => d.json())
-            .then(d => {
-
-                console.log(d.response.results),
-                    // console.log(d.response.results),
-                    this.setState({
-                        response: d.response
-
-                    })
-            }, () => {
-                this.setState({
-                    requestFailed: true
-                })
-            })
+        const url = 'http://content.guardianapis.com/search?section=technology&show-fields=all&q=videos&api-key=4e95ee67-2a00-4f2b-a66a-f5288cf2934f'
+        this.setState({ state: SearchNews(url) })
+        console.log(url);
+        console.log(this.state);
     }
 
     render() {
@@ -91,8 +69,22 @@ class ListItemPopularPost extends Component {
         return (
             <ul className="ppost_nav wow fadeInDown navbarL">
                 {this.state.response.results.map((value, id) => {
-                    return <ItensPopularPost key={id} value={value} />
-                }  )}
+                    return (
+                        <li>
+                            <div className="media">
+                                <a className="media-right" href="pages/single_page.html">
+                                    <img src={value.fields.thumbnail} alt="" />
+                                </a>
+                                <div className="media-body">
+                                    <a className="catg_title" href="#">
+                                        {value.webTitle}
+                                    </a>
+
+                                </div>
+                            </div>
+                        </li>
+                    )
+                })}
 
             </ul>
         );

@@ -5,7 +5,7 @@ import './css/header.css';
 class Header extends Component {
   render() {
     return (
-      <nav className=" topnav">
+      <nav className="topnav">
           <Menu />
       </nav>
     );

@@ -2,30 +2,63 @@ import React, { Component } from 'react';
 import SliderItem from './SliderItem';
 import './slide.css'
 import Slider from 'react-slick';
-
+import { Carousel } from 'react-responsive-carousel';
 
 const urlForSearch = tema =>
-    'https://newsapi.org/v2/top-headlines?fields=all&q=technology&apiKey=af3f0e77d1854d8fa72af41d447582fe'
-
+    'http://content.guardianapis.com/search?section=technology&order-by=relevance&use-date=last-modified&show-fields=all&q=technology&api-key=4e95ee67-2a00-4f2b-a66a-f5288cf2934f'
 
 class CenterMode extends Component {
     constructor(props) {
         super(props)
-        this.state = {
-            requestFailed: false,
-            status: undefined,
-            news: [{
-                source: {
-                    id: null,
-                    name: "",
-                },
-                author: "",
-                title: "",
-                description: "",
-                url: "",
-                urlToImage: "",
-                publishedAt: ""
-            }]
+
+    }
+    state = {
+        response: {
+            status: "",
+            userTier: "",
+            total: 0,
+            startIndex: 0,
+            pageSize: 0,
+            currentPage: 0,
+            pages: 0,
+            orderBy: "",
+            results: [
+                {
+                    id: "",
+                    type: "",
+                    sectionId: "",
+                    sectionName: "",
+                    webPublicationDate: "",
+                    webTitle: "",
+                    webUrl: "",
+                    apiUrl: "",
+                    fields: {
+                        headline: "",
+                        standfirst: "",
+                        trailText: "",
+                        byline: "",
+                        main: "",
+                        body: "",
+                        wordcount: "",
+                        firstPublicationDate: "",
+                        isInappropriateForSponsorship: "",
+                        isPremoderated: "",
+                        lastModified: "",
+                        productionOffice: "",
+                        publication: "",
+                        shortUrl: "",
+                        shouldHideAdverts: "",
+                        showInRelatedContent: "",
+                        thumbnail: "",
+                        legallySensitive: "",
+                        lang: "",
+                        bodyText: "",
+                        charCount: "",
+                        shouldHideReaderRevenue: ""
+                    },
+                    isHosted: false
+                }
+            ]
         }
     }
 
@@ -41,25 +74,19 @@ class CenterMode extends Component {
             })
             .then(d => d.json())
             .then(d => {
-                // console.log(d);
 
-                // console.log(d.status);
-                // console.log(d.articles);
+                // console.log(d.response.results),
+                    // console.log(d.response.results),
+                    this.setState({
+                        response: d.response
 
-
-
-                this.setState({
-                    status: d.status,
-                    news: d.articles
-
-                })
+                    })
             }, () => {
                 this.setState({
                     requestFailed: true
                 })
             })
     }
-
     render() {
         const settings = {
             className: 'center',
@@ -72,13 +99,17 @@ class CenterMode extends Component {
         return (
             <div className="slider">
                 <Slider {...settings}>
-                    {this.state.news.map((value, id) =>
+                    {this.state.response.results.map((value, id) =>
                         <SliderItem key={id} value={value} />
                     )}
                 </Slider>
                 <div className="col-lg-12 col-md-12 col-sm-12 sliderBar">
                     News
                 </div>
+
+
+               
+                );
             </div>
         );
     }

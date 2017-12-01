@@ -10,11 +10,10 @@ class Menu extends Component {
     state = {
         listItensMenu: [
             { nome: 'Home', url: '/' },
-            { nome: 'Blog', url: 'blog' },
-            { nome: 'Mobile', url: 'mobile.html' },
-            { nome: 'Laptops', url: 'laptops.html' },
-            { nome: 'Tablets', url: 'tablets.html' },
-            { nome: 'Contact Us', url: 'contactus.html' },
+            { nome: 'Technology', url: 'technology' },
+            { nome: 'Computers', url: 'computers' },
+            { nome: 'Mobile', url: 'mobile' },
+            { nome: 'Video-games', url: 'Vvideogames' },
         ],
     };
 

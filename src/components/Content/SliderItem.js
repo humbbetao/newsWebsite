@@ -7,16 +7,18 @@ class SliderItem extends Component {
     }
 
     render() {
-         return (
+        return (
 
             <div className="single_iteam">
-                <img src={this.props.value.urlToImage} alt="" />
+                <img src={this.props.value.fields.thumbnail} alt="" />
                 <h2>
-                    <a className="slider_tittle" href="#"> {this.props.value.title}
-                        
+                    <a className="slider_tittle" href="#"> {this.props.value.webTitle}
+
                     </a>
                 </h2>
             </div>
+
+         
         );
     }
 }
