@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import NewsBar from './components/Content/Newsbar';
 import NavbarRight from './components/Content/NavbarRight';
-import 'newsBody.css';
+import Comments from './Comments';
+import './newsBody.css';
 
 const urlForSearch = headline =>
 
@@ -99,10 +100,14 @@ class News extends Component {
                             <div dangerouslySetInnerHTML={{ __html: this.state.response.results[0].fields.body }} />
                         </div>
                     </article>
+                    <div>
+                    </div>
+                    <Comments/>
                 </div>
                 {/* <div className="col-lg-4"> */}
                 <NavbarRight />
                 {/* </div> */}
+
 
 
             </div>
