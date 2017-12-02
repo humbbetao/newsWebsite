@@ -7,12 +7,16 @@ import Mobile from './components/Mobile'
 import VideoGames from './components/VideoGames'
 import News from './News';
 import Path from './Path';
+import {Provider} from 'react-redux';
+
+import store from './store';
 
 import {Router, Route, hashHistory, IndexRoute } from 'react-router';
 
 class App extends Component { 
   render() {
     return (
+      <Provider store={store}>
       <Router  history={hashHistory}>
         <Route path="/" component={Home}>
           <IndexRoute component={Content}/>
@@ -23,6 +27,7 @@ class App extends Component {
           <Route path="videoGames" component={VideoGames}/>
         </Route>
       </Router>
+      </Provider>
     );
   }
 }
