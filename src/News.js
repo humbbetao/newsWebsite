@@ -3,6 +3,9 @@ import NewsBar from './components/Content/Newsbar';
 import NavbarRight from './components/Content/NavbarRight';
 import Comments from './Comments';
 import './newsBody.css';
+import { bindActionCreators } from 'redux';
+import * as todoActions from './actions/todos';
+import {connect} from 'react-redux';
 
 const urlForSearch = headline =>
 
@@ -12,6 +15,7 @@ const urlForSearch = headline =>
 class News extends Component {
     constructor(props) {
         super(props);
+        console.log( props);
     }
 
     state = {
@@ -102,7 +106,7 @@ class News extends Component {
                     </article>
                     <div>
                     </div>
-                    <Comments/>
+                    <Comments />
                 </div>
                 {/* <div className="col-lg-4"> */}
                 <NavbarRight />
@@ -115,6 +119,9 @@ class News extends Component {
     }
 }
 
+const mapDispatchToProps = dispatch =>
+    bindActionCreators(todoActions, dispatch);
 
 
-export default News;
+
+export default connect(null, mapDispatchToProps) (News);
