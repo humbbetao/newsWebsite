@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
-class Blog extends Component {
-
-
+class Technology extends Component {
   render() {
     return (
       <h1>
-        Blog
+        Technology
       </h1>
     );
   }
 }
 
 
-export default Blog;
+export default Technology;

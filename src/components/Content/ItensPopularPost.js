@@ -5,8 +5,21 @@ class ItensPopularPost extends Component {
         super(props);
     }
     render() {
+
         return (
-           <p></p>
+            <li>
+                <div className="media">
+                    <a className="media-right" href="pages/single_page.html">
+                        <img src={this.props.value.fields.thumbnail} alt="" />
+                    </a>
+                    <div className="media-body">
+                        <a className="catg_title" href="#">
+                            {this.props.value.webTitle}
+                        </a>
+                        
+                    </div>
+                </div>
+            </li>
         );
     }
 }

@@ -3,25 +3,15 @@ import Flexbox from 'flexbox-react';
 import Logo from './Logo';
 import MenuItens from './MenuItens';
 import BarSearch from './BarSearch';
-
+import Path from '../../Path';
 
 class Menu extends Component {
-
-    state = {
-        listItensMenu: [
-            { nome: 'Home', url: '/' },
-            { nome: 'Technology', url: 'technology' },
-            { nome: 'Computers', url: 'computers' },
-            { nome: 'Mobile', url: 'mobile' },
-            { nome: 'Video-games', url: 'Vvideogames' },
-        ],
-    };
-
     render() {
+        console.log(Path);
         return (
             <Flexbox flexDirection="row" >
                 <Logo />
-                <MenuItens list={this.state.listItensMenu} />
+                <MenuItens list={Path} />
                 <BarSearch />
             </Flexbox>
         );

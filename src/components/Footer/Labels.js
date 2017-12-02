@@ -1,19 +1,30 @@
 import React, { Component } from 'react';
-
+import Path from '../../Path';
+import { Link } from 'react-router';
 class Labels extends Component {
     render() {
+        console.log (
+            Path.map((item, id) => {
+                return(  item.url, item.nome )
+                }
+        )
+    );
         return (
             <div className="footer_widget wow fadeInLeftBig">
                 <h2>Labels</h2>
                 <ul className="labels_nav">
-                    <li><a href="#">Games</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Technology</a></li>
-                    <li><a href="#">Business</a></li>
-                    <li><a href="#">Slider</a></li>
-                    <li><a href="#">Life &amp; Style</a></li>
-                    <li><a href="#">Ver</a></li>
-                    <li><a href="#">Sports</a></li>
+                
+                    {Path.map((item, id) => {
+                        return(
+                        <li >
+                        <Link   to={item.url}>
+                            {item.nome}
+                        </Link>
+                        </li>)
+
+                    })}
+
+
                 </ul>
             </div>);
     }
