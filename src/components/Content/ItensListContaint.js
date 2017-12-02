@@ -28,7 +28,7 @@ class ItensListContaint extends Component {
                                 to={headline}
 
                             >
-                                {this.props.new.fields.headline}
+                               <div dangerouslySetInnerHTML={{ __html:this.props.new.fields.headline}}/>
                             </Link>
 
                         </p>
