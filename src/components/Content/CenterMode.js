@@ -3,6 +3,7 @@ import SliderItem from './SliderItem';
 import './slide.css'
 import Slider from 'react-slick';
 import { Carousel } from 'react-responsive-carousel';
+import NewsBar from './Newsbar';
 
 const urlForSearch = tema =>
     'http://content.guardianapis.com/search?section=technology&order-by=relevance&use-date=last-modified&show-fields=all&q=technology&api-key=4e95ee67-2a00-4f2b-a66a-f5288cf2934f'
@@ -116,24 +117,18 @@ class CenterMode extends Component {
             centerMode: true,
             infinite: true,
             centerPadding: '0px',
-            slidesToShow: 3,
+            slidesToShow: 2,
             speed: 500
           };
         return (
             <div className="slider">
                 <Slider {...settings}>
-
                     {this.state.response.results.map((value, id) =>
                         <SliderItem key={id} value={value} />
                     )}
                 </Slider>
-                <div className="col-lg-12 col-md-12 col-sm-12 sliderBar">
-                    News
-                </div>
-
-
-
-                );
+                <NewsBar/>
+               
             </div>
         );
     }

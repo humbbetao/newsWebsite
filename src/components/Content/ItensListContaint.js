@@ -11,7 +11,7 @@ class ItensListContaint extends Component {
 
     render() {
         console.log(this.props.new)
-        var headline ="\"".concat(this.props.new.fields.headline)
+        var headline = "\"".concat(this.props.new.fields.headline)
         headline.concat("\"")
         console.log(headline)
         return (
@@ -24,15 +24,10 @@ class ItensListContaint extends Component {
                         </a>
                         <p className="article_section">
 
-                            <Link
-                                to={headline}
-
-                            >
-                               <div dangerouslySetInnerHTML={{ __html:this.props.new.fields.headline}}/>
+                            <Link  to={"news/" + headline + "\""} >
+                              <div dangerouslySetInnerHTML={{ __html: this.props.new.fields.headline }} />
                             </Link>
-
                         </p>
-
                         {this.props.new.fields.trailText}
                     </div>
                 </article>

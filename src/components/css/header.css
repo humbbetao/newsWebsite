@@ -20,6 +20,20 @@
   background-color: #03A9F4;
 }
 
+.navbar-collapse li{
+  max-width: 100%;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+
+}
+.navbar-collapse li:hover{  
+  background-color: #fff;
+  color:#03A9F4;
+}
+
+
+
 .navbar-collapse li a:link{
   background-color: #03A9F4;
 }
@@ -60,13 +74,16 @@
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 
 
 .topnav a:active {
-  background-color: #ccc;
-  color: #1c313a;
+  background-color: #fff;
+  color: #03A9F4; 
 }
 
 /* Add an active class to highlight the current page */
