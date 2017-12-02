@@ -3,9 +3,7 @@ import NewsBar from './components/Content/Newsbar';
 import NavbarRight from './components/Content/NavbarRight';
 import Comments from './Comments';
 import './newsBody.css';
-import { bindActionCreators } from 'redux';
-import * as todoActions from './actions/todos';
-import {connect} from 'react-redux';
+
 
 const urlForSearch = headline =>
 
@@ -17,6 +15,7 @@ class News extends Component {
         super(props);
         console.log( props);
     }
+
 
     state = {
         response: {
@@ -119,9 +118,4 @@ class News extends Component {
     }
 }
 
-const mapDispatchToProps = dispatch =>
-    bindActionCreators(todoActions, dispatch);
-
-
-
-export default connect(null, mapDispatchToProps) (News);
+export default News;
