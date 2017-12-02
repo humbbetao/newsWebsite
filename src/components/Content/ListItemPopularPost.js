@@ -88,9 +88,8 @@ class ListItemPopularPost extends Component {
     render() {
         console.log(this.state.response)
         return (
-            <ul className="ppost_nav wow fadeInDown navbarL">
+            <ul className="post_navright">
                 {this.state.response.results.map((value, id) => {
-
                     return <ItensPopularPost key={id} value={value} />
                 })}
 

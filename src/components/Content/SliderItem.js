@@ -10,15 +10,15 @@ class SliderItem extends Component {
         return (
 
             <div className="single_iteam">
-                <img src={this.props.value.fields.thumbnail} alt="" />
-                <h2>
-                    <a className="slider_tittle" href="#"> {this.props.value.webTitle}
-
-                    </a>
-                </h2>
+                <a className="slider_img" href="#">
+                    <img src={this.props.value.fields.thumbnail} alt="" />
+                    <h2 class="slider_title">
+                        {this.props.value.webTitle}
+                    </h2>
+                </a>
             </div>
 
-         
+
         );
     }
 }

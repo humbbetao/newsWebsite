@@ -37,13 +37,13 @@ figure.effect-lily figcaption.text_lilly a{
     text-decoration: none;
 }
 
-.navbarL{
+.post_navright{
     list-style: none;
     padding: 0px;
     margin: 5%;
 
 }
-.navbarL> li{
+.post_navright> li{
     margin-top: 5%;
 }
 .media-right{
@@ -55,9 +55,27 @@ figure.effect-lily figcaption.text_lilly a{
 
     height:20%;
 }
+
 .containerBody{
     padding-top: 1%;
     text-decoration: None;
     margin:0px;
     border:0px;
+}
+.media-right{
+    text-decoration: none;
+}
+.catg_title{
+text-decoration: none;
+}
+
+.text_lilly>a{
+    text-decoration: none;
+}
+.catg_title> a{
+    text-decoration: none
+}
+a .nounderline:link  
+    {  
+     text-decoration:none;  
 }

@@ -24,7 +24,7 @@ class Footer extends Component {
 
         <div className="footer_bottom">
           <div className="container">
-            <p className="copyright">Copyright &copy; 2045 <a href="index.html">Cyber news</a></p>
+            <p className="copyright">Copyright &copy; 2017 <a href="index.html">Cyber news</a></p>
             <p className="developer">Developed By Humberto Gonçalves</p>
           </div>
         </div>

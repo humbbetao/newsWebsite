@@ -4,11 +4,17 @@
 .footer_widget > h2{color:#fff; font-size:19px; font-weight:20pt; margin-bottom:12px; padding-bottom:8px; text-transform:none; font-weight: 28pt;}
 .footer_widget > h2:before{display:inline-block; padding-right:5px}
 .labels_nav ul{list-style: none;}
-.labels_nav{padding-left:20px; position:relative; list-style: none;}
-.labels_nav li{margin:0 0 0 20px; font-weight: 16pt;  padding:0 0 5px; text-transform:capitalize; display:inline-block; text-decoration: none;}
+.labels_nav{padding-left:20px; position:relative; list-style: none; color:#fff;}
+.labels_nav li{margin:0 0 0 20px; font-weight: 16pt; color:#fff; padding:0 0 5px; text-transform:capitalize; display:inline-block; text-decoration: none;}
 .labels_nav li:before{background-color:#fff; position:absolute; width:8px}
-.labels_nav li a{color:#232323; text-decoration: none;}
+.labels_nav li a{color:#fff; text-decoration: none;}
 .footer_widget .media a{color:#0063B1; background-color: rgb(0, 62, 109);}
 .footer_widget .ppost_nav{margin-top:18px}
 .footer_bottom{background-color:#0063B1; color:#fff; display:inline; float:left; padding:15px 0 5px; width:100%}
+.subscribe_form input {
+    width:80%;   
+}
 
+.footer_bottom{
+    text-align: center;
+}

@@ -12,20 +12,25 @@ class ItensListContaint extends Component {
         return (
             <li className="wow fadeInDown">
                 <article className="featured_article">
-                    <h2 className="article_title">
-                        <p className="article_section">{this.props.new.sectionName} /
-                        <Link
-                            to={this.props.new.fields.headline}
+
+                    <div className="article_body">
+                        <a href="pages/single_page.html">
+                            <img src={this.props.new.fields.thumbnail} alt="" />
+                        </a>
+                        <p className="article_section">
+
+                            <Link
+                                to={this.props.new.fields.headline}
                             // render={(this.props.new)  =>
                             //     (<News news={this.props.new} />)}}
-                             >
-                            {this.props.new.fields.headline}
-                        </Link>
-                        </p>
-                    </h2>
-                <br />
-                <p className="article_trailtex"> {this.props.new.fields.trailText}</p>
+                            >
+                                {this.props.new.fields.headline}
+                            </Link>
 
+                        </p>
+
+                        {this.props.new.fields.trailText}
+                    </div>
                 </article>
             </li >
         );
