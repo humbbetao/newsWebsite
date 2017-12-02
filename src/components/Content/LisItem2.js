@@ -3,7 +3,7 @@ import './bodyNews.css'
 import ItensListContaint from './ItensListContaint';
 
 const urlForSearch = tema =>
-'http://content.guardianapis.com/search?show-elements=all&show-fields=all&q=technology&api-key=4e95ee67-2a00-4f2b-a66a-f5288cf2934f'
+    'http://content.guardianapis.com/search?show-elements=all&show-fields=all&q=technology&api-key=4e95ee67-2a00-4f2b-a66a-f5288cf2934f'
 
 class ListItem2 extends Component {
     constructor(props) {
@@ -67,21 +67,12 @@ class ListItem2 extends Component {
                 if (!response.ok) {
                     throw Error("Network request failed")
                 }
-
                 return response
             })
-            .then(d => d.json())
-            .then(d => {
-
-                // console.log(d.response.results),
-                    // console.log(d.response.results),
-                    this.setState({
-                        response: d.response
-
-                    })
-            }, () => {
+            .then(res => res.json())
+            .then(res => {
                 this.setState({
-                    requestFailed: true
+                    response: res.response
                 })
             })
     }

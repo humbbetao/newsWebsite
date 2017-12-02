@@ -15,10 +15,8 @@ class App extends Component {
     return (
       <Router  history={hashHistory}>
         <Route path="/" component={Home}>
-          <IndexRoute component={Content}>
-            <Route path="/:id" component={News}/>
-          </IndexRoute>
-          
+          <IndexRoute component={Content}/>
+          <Route path="/:news" component={News}/>
           <Route path="technology" component={Technology}/>
           <Route path="computers" component={Computers}/>
           <Route path="mobile" component={Mobile}/>

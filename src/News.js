@@ -1,18 +1,27 @@
 import React, { Component } from 'react';
-import Header from './Header';
-import Footer from './Footer';
-import Flexbox from 'flexbox-react';
-
 
 class News extends Component {
+    constructor(props) {
+        super(props);
+    }
     render() {
-        return (
-            <div>
 
+        return (
+
+            <div>
+                <div className="header_news">
+                    {this.props.new.title}
+
+                </div>
+                <div className="containt_news">
+                    {this.props.new.body_text}
+                </div>
             </div>
         );
+
     }
 }
+
 
 
 export default News;

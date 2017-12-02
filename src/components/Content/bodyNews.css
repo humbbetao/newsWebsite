@@ -11,16 +11,14 @@ lastNews{
     background-color: green;
 }
 
-.containerBody{
-    padding-top: 1%;
-    text-decoration: None;
-}
+
 
 .left_sidebar{float:left; display:inline; width:100%}
 .single_widget{display:inline; float:left; padding:0 10px 30px; width:100%; border-left:1px solid #e3e3e3; border-right:1px solid #e3e3e3; border-bottom:1px solid #e3e3e3}
 .single_widget > h2{color:#fff; font-size:19px; margin:0 0 20px -10px; padding:9px 25px; text-align:center; width:107.1%}
 .single_widget > h2 a{color:#fff; font-family:'Arvo',serif}
 .post_nav{padding-left: 5%; padding-right: 5%;}
+.post_nav{margin-top: 2%;}
 .post_nav li{border-bottom:1px dashed #ddd; list-style-type:none; float:left; width:100%; margin-bottom:30px; padding-bottom:10px}
 .post_nav figure{position:relative; float:left; overflow:hidden; width:100%; text-align:center; cursor:pointer}
 .post_nav figure img{position:relative; display:block; min-height:100%; max-width:100%; opacity:0.8}
@@ -56,4 +54,10 @@ figure.effect-lily figcaption.text_lilly a{
 .media-right>img {
 
     height:20%;
+}
+.containerBody{
+    padding-top: 1%;
+    text-decoration: None;
+    margin:0px;
+    border:0px;
 }

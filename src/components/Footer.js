@@ -11,7 +11,7 @@ class Footer extends Component {
         <div className="footer_top">
           <div className="container">
             <div className="row">
-              <div className="col-lg-4 col-md-4 col-sm4">
+              <div className="col-lg-8 col-md-8 col-sm8">
                 <Labels />
               </div>
 

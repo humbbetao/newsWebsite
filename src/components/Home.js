@@ -6,7 +6,7 @@ import Flexbox from 'flexbox-react';
 
 class Home extends Component {
     render() {
-         {/* Single Page Application */}
+        {/* Single Page Application */ }
         return (
             <Flexbox
                 flexDirection="column"    >
