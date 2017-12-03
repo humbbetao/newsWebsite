@@ -15,3 +15,28 @@ body{
         font-family: 'Quantify Bold';
         font-size:26pt; 
 }
+
+
+@font-face {
+    font-family: 'Belgrano-Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Belgrano-Regular.ttf' ); /* IE9 Compat Modes */
+  }
+
+
+  @font-face {
+    font-family: 'Domine-Bold';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Domine-Bold.ttf' ); /* IE9 Compat Modes */
+  }
+
+
+  @font-face {
+    font-family: 'Domine-Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Domine-Regular.ttf' ); /* IE9 Compat Modes */
+  }
+

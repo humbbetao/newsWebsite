@@ -10,19 +10,21 @@ class Comment extends Component {
         email: '',
         comment: '',
     }
-    addNewComment = () => {
+    addNewComment = (e) => {
+        e.preventDefault();
         this.props.addComment(this.state.user, this.state.email, this.state.comment);
         this.setState({ user: '', email: '', comment: '' })
     };
 
     render() {
+        console.log(this.props.todos)
         return (
             <div className="formComment">
                 <ul>
-
                     {this.props.todos.map(todo => (
                         <div key={todo.id}>
-                            Name:  {todo.text}
+                            Name:  {todo.user}
+                            Comment: {todo.comment}
 
                         </div>
                     ))}

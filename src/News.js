@@ -99,10 +99,10 @@ class News extends Component {
                         <h1 className="article_title_news">
                             {response.fields.headline}
                         </h1>
-                        <br />
-                        Published on {published.toDateString()}
-                        <h5>{response.fields.trailText}</h5>
-
+                        <h5 className="trailText">{response.fields.trailText}</h5>
+                        <p className="published">
+                            Published on {published.toDateString()}
+                        </p>
                         <div className="article_body_news">
                             <img src={response.fields.thumbnail} alt="" />
                             <p>

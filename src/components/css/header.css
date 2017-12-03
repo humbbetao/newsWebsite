@@ -1,5 +1,5 @@
 .navbar-collapse {
-    width: 80%;
+    width: 70%;
     color: #2980b9;
     border: 0px;
     margin: 0px;
@@ -129,4 +129,9 @@
 .topnav a:active{
     background:#fff !important;
     color:#0063B1 !important; 
+}
+
+.navbar-right{
+    width: 20%;
+    padding: 8px;
 }

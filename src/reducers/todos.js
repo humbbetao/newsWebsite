@@ -5,9 +5,9 @@ export default function todos(state = [], action) {
         case 'ADD_COMMENT':
             return [...state, {
                 id: Math.random,
-                user: action.name,
+                user: action.user,
                 email: action.email,
-                comment: action.email
+                comment: action.comment
             }]
         default:
             return state;

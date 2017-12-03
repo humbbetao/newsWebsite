@@ -20,6 +20,8 @@
     border: 0px;
     text-align: center;
     padding-top: 2%;
+    font-weight: bold;
+    font-family: 'Belgrano-Regular';
 }
 
 .article_body_news>img {
@@ -32,6 +34,8 @@
     border: 0px;
     padding-top: 5%;
     text-align: left;
+    font-family: 'Domine-Regular';
+    font-size: 11pt;
 }
 
 .article_body_news>img:hover {
@@ -59,3 +63,14 @@
     display: block;
     margin-bottom:5%;
 }
+
+.published{
+    font-size: 12pt;
+    color: #ccc;
+}
+
+.trailText{
+    font-family: 'Domine-bold';
+    color:#232323;
+}
+
