@@ -3,32 +3,33 @@ import { bindActionCreators } from 'redux';
 import * as todoActions from './actions/todos';
 import { connect } from 'react-redux';
 import CounterComments from './CounterComments';
+import './comments.css'
 class Comment extends Component {
-    constructor(props) {
-        super(props);
-        console.log(props);
-
-    }
-
     state = {
-        newTodoText: '',
+        user: '',
+        email: '',
+        comment: '',
     }
-    addNewTodo = () => {
-        this.props.addTodo(this.state.newTodoText);
-        this.setState({ newTodoText: '' })
+    addNewComment = () => {
+        this.props.addComment(this.state.user, this.state.email, this.state.comment);
+        this.setState({ user: '', email: '', comment: '' })
     };
 
     render() {
         return (
-            <div classNameName="col-lg-9">
+            <div classNameName="col-lg-9 formComment">
                 <ul>
+
                     {this.props.todos.map(todo => (
-                        <li key={todo.id}>{todo.text}</li>
+                        <div key={todo.id}>
+                            Name:  {todo.text}
+
+                        </div>
                     ))}
                 </ul>
-                <CounterComments/>
-                <h3>Leave a replay</h3>
-                <form>
+                <CounterComments />
+                <h3>Leave a reply</h3>
+                <form className="formComment">
                     <div className="form-group">
                         <label for="nameInput">Name</label>
                         <input
@@ -37,21 +38,32 @@ class Comment extends Component {
                             id="nameInput"
                             aria-describedby="nameHelp"
                             placeholder="Enter your name"
-                            value={this.state.newTodoText}
-                            onChange={(e) => this.setState({ newTodoText: e.target.value })}
+                            value={this.state.user}
+                            onChange={(e) => this.setState({ user: e.target.value })}
                         />
-                        <small id="nameHelp" className="form-text text-muted">Let's we know who your is;</small>
+                        <small id="nameHelp" className="form-text text-muted">Let us know who you are</small>
                     </div>
                     <div className="form-group">
                         <label for="inputEmail">Email address</label>
-                        <input type="email" className="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email" />
+                        <input type="email"
+                            className="form-control"
+                            id="inputEmail"
+                            aria-describedby="emailHelp"
+                            placeholder="Enter email"
+                            value={this.state.email}
+                            onChange={(e) => this.setState({ email: e.target.value })}
+                        />
                         <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                     <div className="form-group">
                         <label for="comment">Comment:</label>
-                        <textarea className="form-control" rows="5" id="comment"></textarea>
+                        <textarea className="form-control" rows="5" id="comment"
+                            value={this.state.comment}
+                            onChange={(e) => this.setState({ comment: e.target.value })}
+                        ></textarea>
                     </div>
-                    <button type="submit" className="btn btn-primary" onClick={this.addNewTodo}>Submit</button>
+                    <button type="submit" className="btn btn-primary" onClick={this.addNewComment}>Submit</button>
+                    <br />
                 </form>
             </div>
         );

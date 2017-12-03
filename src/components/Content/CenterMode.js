@@ -7,27 +7,6 @@ import './slide.css'
 const urlForSearch = tema =>
     'http://content.guardianapis.com/search?section=technology&order-by=relevance&use-date=last-modified&show-fields=all&q=technology&api-key=4e95ee67-2a00-4f2b-a66a-f5288cf2934f'
 
-// function SampleNextArrow(props) {
-//     const { className, style, onClick } = props
-//     return (
-//         <div
-//             className={className}
-//             style={{ ...style, display: 'block', background: 'red' }}
-//             onClick={onClick}
-//         ></div>
-//     );
-// }
-
-// function SamplePrevArrow(props) {
-//     const { className, style, onClick } = props
-//     return (
-//         <div
-//             className={className}
-//             style={{ ...style, display: 'block', background: 'green' }}
-//             onClick={onClick}
-//         ></div>
-//     );
-// }
 class CenterMode extends Component {
     state = {
         response: {
@@ -91,12 +70,8 @@ class CenterMode extends Component {
             })
             .then(d => d.json())
             .then(d => {
-
-                // console.log(d.response.results),
-                // console.log(d.response.results),
                 this.setState({
                     response: d.response
-
                 })
             }, () => {
                 this.setState({
@@ -108,13 +83,17 @@ class CenterMode extends Component {
 
     render() {
         const settings = {
-            className: 'center',
-            centerMode: true,
+            className: 'sampleArrows',
             infinite: true,
-            centerPadding: '0px',
-            slidesToShow: 2,
-            speed: 500
-          };
+            speed: 5000,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            dots: true,
+            centerMode: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            variableWidth: true,
+        };
         return (
             <div className="slider">
                 <Slider {...settings}>
@@ -122,8 +101,8 @@ class CenterMode extends Component {
                         <SliderItem key={id} value={value} />
                     )}
                 </Slider>
-                <NewsBar/>
-               
+                {/* <NewsBar /> */}
+
             </div>
         );
     }

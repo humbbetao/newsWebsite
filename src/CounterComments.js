@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 const CounterComments = (props) => (
-    <h2>Você tem {props.todos.length} todos </h2> 
+    <h6>This news has {props.todos.length} comments </h6> 
 );
 
 const mapStateToProps = state => ({

@@ -1,6 +1,8 @@
-export function addTodo(text){
+export function addComment(user, email, comment){
     return {
-        type:'ADD_TODO',
-        text,
+        type:'ADD_COMMENT',
+        user,
+        email,
+        comment,
     }
 }
