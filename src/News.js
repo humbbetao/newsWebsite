@@ -5,6 +5,7 @@ import NavbarLeft from './components/Content/NavbarLeft';
 import Comments from './Comments';
 import './newsBody.css';
 
+// import SearchNews from './SearchNews'
 
 const urlForSearch = headline =>
 
@@ -70,6 +71,7 @@ class News extends Component {
     componentDidMount() {
         console.log(this.props);
         console.log(this.props.params.news);
+
         fetch(urlForSearch(this.props.params.title))
             .then(response => {
                 if (!response.ok) {
@@ -103,7 +105,6 @@ class News extends Component {
 
                         <div className="article_body_news">
                             <img src={response.fields.thumbnail} alt="" />
-                            {response.fields.trailText}
                             <p>
                                 <div dangerouslySetInnerHTML={{ __html: response.fields.body }} />
                             </p>

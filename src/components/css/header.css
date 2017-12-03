@@ -3,22 +3,25 @@
     color: #2980b9;
     border: 0px;
     margin: 0px;
-    padding-top: 8px;
+    margin-top: auto;
+    margin-bottom: auto;
     font-size: 16pt;
 }
 
 .navbar-header {
     width: 20%;
     background-color: #03A9F4;
-    color: #34495e;
+    color: #fff;
     border: none;
     border-radius: 0;
     padding-top: 8px;
     font-size: 16pt;
+    height: 80px;
 }
 
 .navbar-collapse li {
     background-color: #03A9F4;
+    color: #fff;
 }
 
 .navbar-collapse li {
@@ -29,49 +32,15 @@
 }
 
 .navbar-collapse li:hover {
-    background-color: #fff;
-    color: #03A9F4;
+    background-color: #03A9F4;
+    color: #fff;
 }
 
 .navbar-collapse li a:link {
     background-color: #03A9F4;
-}
-
-.navbar-collapse li a:hover {
-    background-color: #fff;
-    color: #03A9F4;
-}
-
-.navbar-collapse li a:active>.navbar-collapse li {
-    background-color: #fff;
-    color: #03A9F4;
-}
-
-.navbar-brand {
-    color: #03A9F4;
-}
-
-.navbar-right {
-    margin-right: 1%;
-}
-
-
-/* Add a black background color to the top navigation */
-
-.topnav {
-    background-color: #03A9F4;
-    overflow: hidden;
-    border: none;
-    border-radius: 0;
-}
-
-
-/* Style the links inside the navigation bar */
-
-.topnav a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: #fff;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -81,21 +50,22 @@
     transition: all 0.5s;
 }
 
-.topnav a:active {
+.navbar-collapse li a:hover {
     background-color: #fff;
     color: #03A9F4;
 }
 
-.active {
-    background-color: #4CAF50;
-    color: white;
+.navbar-collapse li a:active>.navbar-collapse li {
+    background-color:#03A9F4;
+    color: #fff;
 }
 
+.navbar-brand {
+    color: #03A9F4;
+}
 
-/* Hide the link that should open and close the topnav on small screens */
-
-.topnav .icon {
-    display: none;
+.navbar-right {
+    margin-right: 1%;
 }
 
 .container-1 input#search {
@@ -110,6 +80,7 @@
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
+    margin-top: 8px;
 }
 
 .container-1 input#search::-webkit-input-placeholder {
@@ -146,12 +117,16 @@
     background: #ffffff;
 }
 
-.navbar-collapse a:hover {
-  background-color: #fff;
-  color: #0063B1;
+.topnav{
+    background:#03A9F4; 
 }
 
-.navbar-collapse a:active {
-    background-color: #fff;
-    color: #0063B1;
+.topnav a:active{
+    background:#fff !important;
+    color:#0063B1 !important; 
+}
+
+.topnav a:active{
+    background:#fff !important;
+    color:#0063B1 !important; 
 }

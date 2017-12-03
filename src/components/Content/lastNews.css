@@ -1,32 +1,31 @@
-.middle_content> h2{
+.middle_content>h2 {
     width: 100%;
     background-color: #0078D7;
-    border-radius:5px;
+    border-radius: 5px;
     font-size: 15pt;
-    color:#fff;
-    padding:2%;
-    padding-left:0px;
-    padding-right:0px;
-    margin:0px;
-    border:0px;
+    color: #fff;
+    padding: 2%;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0px;
+    border: 0px;
     text-align: center;
 }
 
-.featured_article{
-    border:1px;
+.featured_article {
+    border: 1px;
+    padding: 5px;
 }
 
-.article_section{
-    
-}
+.article_section {}
 
-.col-lg-6 .col-md-6 .col-sm-8{
-    padding:0px;
+.col-lg-6 .col-md-6 .col-sm-8 {
+    padding: 0px;
     margin: 0px;
-    top:10px;
+    top: 10px;
 }
 
-.col-lg-3 .col-md-3 .col-sm-4{
-    margin:0px;
-    border:0px;
+.col-lg-3 .col-md-3 .col-sm-4 {
+    margin: 0px;
+    border: 0px;
 }
