@@ -1,9 +1,16 @@
+newsBody{
+    font-family: 'Belgrano-Regular';
+}
 .newsBody article {
     padding-top: 0%;
 }
 
 .newsBody .single_widget_Right {
     padding-top: 5%;
+}
+
+.newsBody{
+    border-bottom: 1px solid #ccc;
 }
 
 .newsBody .single_widget {
@@ -74,3 +81,9 @@
     color:#232323;
 }
 
+
+
+.author_news{
+    border-bottom: 1px solid #ccc;
+    font-family: 'Belgrando-Regular';
+}

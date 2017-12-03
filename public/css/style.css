@@ -40,3 +40,7 @@ body{
     src: url('../fonts/Domine-Regular.ttf' ); /* IE9 Compat Modes */
   }
 
+
+  body{
+    font-family: 'Domine-Regular';
+  }

@@ -92,7 +92,6 @@ class News extends Component {
         var published = new Date(response.fields.lastModified);
         return (
             <div className="newsBody">
-                {/* <NewsBar /> */}
                 <NavbarLeft />
                 <div className="col-lg-6" >
                     <article className="article_news">
@@ -105,24 +104,17 @@ class News extends Component {
                         </p>
                         <div className="article_body_news">
                             <img src={response.fields.thumbnail} alt="" />
-                            <p>
+                        
                                 <div dangerouslySetInnerHTML={{ __html: response.fields.body }} />
-                            </p>
                         </div>
-                        <p className="col-lg-6">
+                        <p className="col-lg-12 author_news">
                             Author: {response.fields.byline}
                         </p>
                     </article>
-                    <div>
-                    </div>
                     <Comments />
                 </div>
-                {/* <div className="col-lg-4"> */}
+
                 <NavbarRight />
-                {/* </div> */}
-
-
-
             </div>
         );
     }
