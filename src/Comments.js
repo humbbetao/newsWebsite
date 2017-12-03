@@ -6,9 +6,6 @@ import CounterComments from './CounterComments';
 import FormsErrors from './FormErrors';
 import './comments.css'
 
-
-
-
 class Comment extends Component {
     state = {
         user: '',
@@ -22,12 +19,10 @@ class Comment extends Component {
     }
 
     validateField(fieldName, value) {
-        console.log(fieldName, value);
         let fieldValidationErrors = this.state.formErrors;
         let emailValid = this.state.emailValid;
         let userValid = this.state.userValid;
         let commentValid = this.state.commentValid;
-
         switch (fieldName) {
             case 'email':
                 emailValid = value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i);
@@ -44,12 +39,12 @@ class Comment extends Component {
             default:
                 break;
         }
-        // this.setState({
-        //     formErrors: fieldValidationErrors,
-        //     emailValid: emailValid,
-        //     passwordValid: passwordValid
-        // }, this.validateForm);
-        this.setState(this.validateForm);
+        this.setState({
+            formErrors: fieldValidationErrors,
+            emailValid: emailValid,
+            userValid: userValid,
+            commentValid: commentValid,
+        }, this.validateForm);
     }
 
     validateForm() {
@@ -65,18 +60,18 @@ class Comment extends Component {
         const value = e.target.value;
 
         this.setState({ [name]: value },
-            () => { this.validateField(name, value) });
-        // this.setState({ comment: e.target.value })
+            () => {
+                this.validateField(name, value)
+            });
     }
 
     addNewComment = (e) => {
         e.preventDefault();
 
-
-
-        this.props.validate(this.state.user, this.state.email, this.state.comment);
-        this.props.addComment(this.state.user, this.state.email, this.state.comment);
-        this.setState({ user: '', email: '', comment: '' })
+        if (this.state.formValid) {
+            this.props.addComment(this.state.user, this.state.email, this.state.comment);
+            this.setState({ user: '', email: '', comment: '' })
+        }
     };
 
     render() {
