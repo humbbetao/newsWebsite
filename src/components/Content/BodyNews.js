@@ -7,9 +7,8 @@ class BodyNews extends Component {
     render() {
         return (
             <div className="containerBody col-lg-12 col-md-12 col-sd-12">
-
                 <NavbarLeft />
-                <LastNews news ={this.props.news} />
+                <LastNews query={this.props.query} />
                 <NavbarRight />
             </div >
         );

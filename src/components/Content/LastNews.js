@@ -9,7 +9,7 @@ class LastNews extends Component {
             <div className="col-lg-6 col-md-6 col-sm-8">
                 <div className="middle_content">
                     <h2>What’s Hot</h2>
-                    <ListItem2/>
+                    <ListItem2 query={this.props.query}/>
                 </div>
             </div>
         );

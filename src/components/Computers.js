@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
+import CenterMode from './Content/CenterMode';
+import BodyNews from './Content/BodyNews';
+
 class Computers extends Component {
 
   render() {
     return (
-      <h1>
-        Computers
-      </h1>
+      <div className="content">
+        <CenterMode />
+        <BodyNews  query='computer' />
+      </div>
     );
   }
 }
