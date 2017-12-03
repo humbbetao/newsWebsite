@@ -1,82 +1,139 @@
-.navbarLeft{
-    background-color: blue;
-
-}
-.navbarRight{
-    background-color: red;
-    
+.left_sidebar {
+    float: left;
+    display: inline;
+    width: 100%
 }
 
-lastNews{
-    background-color: green;
+.single_widget {
+    display: inline;
+    float: left;
+    padding: 0 10px 30px;
+    width: 100%;
 }
 
+.single_widget>h2 {
+    color: #fff;
+    font-size: 19px;
+    margin: 0 0 20px -10px;
+    padding: 9px 25px;
+    text-align: center;
+    width: 107.1%
+}
 
+.single_widget>h2 a {
+    color: #fff;
+    font-family: 'Arvo', serif
+}
 
-.left_sidebar{float:left; display:inline; width:100%}
-.single_widget{display:inline; float:left; padding:0 10px 30px; width:100%; border-left:1px solid #e3e3e3; border-right:1px solid #e3e3e3; border-bottom:1px solid #e3e3e3}
-.single_widget > h2{color:#fff; font-size:19px; margin:0 0 20px -10px; padding:9px 25px; text-align:center; width:107.1%}
-.single_widget > h2 a{color:#fff; font-family:'Arvo',serif}
-.post_nav{padding-left: 5%; padding-right: 5%;}
-.post_nav{margin-top: 5%;}
-.post_nav li{border-bottom:1px dashed #ddd; list-style-type:none; float:left; width:100%; margin-bottom:30px; padding-bottom:10px}
-.post_nav figure{position:relative; float:left; overflow:hidden; width:100%; text-align:center; cursor:pointer}
-.post_nav figure img{position:relative; display:block; min-height:100%; max-width:100%; opacity:0.8}
+.post_nav {
+    padding-left: 5%;
+    padding-right: 5%;
+}
 
-figure.effect-lily img{max-width:none; width:-webkit-calc(100%+50px); width:calc(100%+50px); opacity:0.7; -webkit-transition:opacity 0.35s,-webkit-transform 0.35s; transition:opacity 0.35s,transform 0.35s; -webkit-transform:translate3d(-40px,0,0); transform:translate3d(-40px,0,0)}
-figure.effect-lily a:hover img{opacity:1}
-figure.effect-lily a:hover img{-webkit-transform:translate3d(0,0,0); transform:translate3d(0,0,0)}
+.post_nav {
+    margin-top: 5%;
+}
 
-figure.effect-lily figcaption.text_lilly{
-    font-size:10pt;
+.post_nav li {
+    border-bottom: 1px dashed #ddd;
+    list-style-type: none;
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
+    padding-bottom: 10px
+}
+
+.post_nav figure {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    cursor: pointer
+}
+
+.post_nav figure img {
+    position: relative;
+    display: block;
+    min-height: 100%;
+    max-width: 100%;
+    opacity: 0.8
+}
+
+figure.effect-lily img {
+    max-width: none;
+    width: -webkit-calc(100%+50px);
+    width: calc(100%+50px);
+    opacity: 0.7;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(-40px, 0, 0);
+    transform: translate3d(-40px, 0, 0)
+}
+
+figure.effect-lily a:hover img {
+    opacity: 1
+}
+
+figure.effect-lily a:hover img {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+}
+
+figure.effect-lily figcaption.text_lilly {
+    font-size: 10pt;
     font-weight: bold;
     text-decoration: none;
 }
 
-figure.effect-lily figcaption.text_lilly a{
+figure.effect-lily figcaption.text_lilly a {
     text-decoration: none;
 }
 
-.post_navright{
+.post_navright {
     list-style: none;
     padding: 0px;
     margin: 5%;
     text-align: justify;
-
 }
-.post_navright> li{
+
+.post_navright>li {
     margin-top: 5%;
 }
-.media-right{
-    width:50%;
+
+.media-right {
+    width: 50%;
     height: 50%;
     max-height: 100px;
 }
-.media-right>img {
 
-    height:20%;
+.media-right>img {
+    height: 20%;
 }
 
-.containerBody{
+.containerBody {
     padding-top: 1%;
     text-decoration: None;
-    margin:0px;
-    border:0px;
-}
-.media-right{
-    text-decoration: none;
-}
-.catg_title{
-text-decoration: none;
+    margin: 0px;
+    border: 0px;
 }
 
-.text_lilly>a{
+.media-right {
     text-decoration: none;
 }
-.catg_title> a{
+
+.catg_title {
+    text-decoration: none;
+}
+
+.text_lilly>a {
+    text-decoration: none;
+}
+
+.catg_title>a {
     text-decoration: none
 }
-a .nounderline:link  
-    {  
-     text-decoration:none;  
+
+a .nounderline:link {
+    text-decoration: none;
 }

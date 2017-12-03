@@ -6,19 +6,29 @@
     padding-top: 5%;
 }
 
-.featured_article {
+.newsBody .single_widget {
+    padding-top: 5%;
+}
+
+
+.article_news {
     margin: 0px;
     border: 0px;
 }
 
-.article_section {
+.article_title_news {
     margin: 0px;
     border: 0px;
     text-align: center;
     padding-top: 2%;
 }
 
-.article_body {
+.article_body_news> img {
+    margin: auto;
+    width: 500px;
+}
+
+.article_body_news {
     margin: 0px;
     border: 0px;
     padding-top: 5%;

@@ -17,7 +17,7 @@ class Comment extends Component {
 
     render() {
         return (
-            <div classNameName="col-lg-9 formComment">
+            <div className="formComment">
                 <ul>
 
                     {this.props.todos.map(todo => (
@@ -31,7 +31,8 @@ class Comment extends Component {
                 <h3>Leave a reply</h3>
                 <form className="formComment">
                     <div className="form-group">
-                        <label for="nameInput">Name</label>
+                        <br />
+                        <label htmlFor="nameInput">Name</label>
                         <input
                             type="text"
                             className="form-control"
@@ -44,7 +45,7 @@ class Comment extends Component {
                         <small id="nameHelp" className="form-text text-muted">Let us know who you are</small>
                     </div>
                     <div className="form-group">
-                        <label for="inputEmail">Email address</label>
+                        <label htmlFor="inputEmail">Email address</label>
                         <input type="email"
                             className="form-control"
                             id="inputEmail"
@@ -56,7 +57,7 @@ class Comment extends Component {
                         <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                     <div className="form-group">
-                        <label for="comment">Comment:</label>
+                        <label htmlFor="comment">Comment:</label>
                         <textarea className="form-control" rows="5" id="comment"
                             value={this.state.comment}
                             onChange={(e) => this.setState({ comment: e.target.value })}

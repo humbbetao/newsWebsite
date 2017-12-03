@@ -57,7 +57,7 @@ class ListItemPopularPost extends Component {
     }
 
     componentDidMount() {
-        console.log(urlForSearch);
+        // console.log(urlForSearch);
         fetch(urlForSearch)
             .then(response => {
                 if (!response.ok) {
@@ -82,7 +82,7 @@ class ListItemPopularPost extends Component {
             })
     }
     render() {
-        console.log(this.state.response)
+        // console.log(this.state.response)
         return (
             <ul className="post_navright">
                 {this.state.response.results.map((value, id) => {

@@ -4,24 +4,29 @@ import { Link } from 'react-router';
 
 class ItensListContaint extends Component {
     render() {
-        var headline = "\"".concat(this.props.new.fields.headline)
-        headline.concat("\"")
+        var headline =this.props.new.fields.headline
+        // headline = headline
         return (
-            <li className="wow fadeInDown">
+            <li>
                 <article className="featured_article">
 
                     <div className="article_body">
-                        <Link to={"news/" + headline + "\""} >
+                        <Link to={'news/'.concat(headline)} >
                             <img src={this.props.new.fields.thumbnail} alt="" />
                         </Link>
-                        <p className="article_section">
-
-                            <Link to={"news/" + headline + "\""} >
+                    </div>
+                    <div className="article_section">
+                        <div className="article_title">
+                            <Link to={'news/'.concat(headline)} >
                                 <div dangerouslySetInnerHTML={{ __html: this.props.new.fields.headline }} />
                             </Link>
-                        </p>
-                        {this.props.new.fields.trailText}
+                        </div>
+                        <div className="article_trailtex">
+                            {this.props.new.fields.trailText}
+                        </div>
                     </div>
+
+
                 </article>
             </li >
         );

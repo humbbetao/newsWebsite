@@ -7,7 +7,7 @@ import Path from '../../Path';
 
 class Menu extends Component {
     render() {
-        console.log(Path);
+        // console.log(Path);
         return (
             <Flexbox flexDirection="row" >
                 <Logo />

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ItensNavbar from './ItensNavbar';
 import './bodyNews.css'
 const urlForSearch = tema =>
-'http://content.guardianapis.com/search?show-elements=all&show-fields=all&q=game&api-key=4e95ee67-2a00-4f2b-a66a-f5288cf2934f'
+    'http://content.guardianapis.com/search?show-elements=all&show-fields=all&q=game&api-key=4e95ee67-2a00-4f2b-a66a-f5288cf2934f'
 
 class ListItem extends Component {
     state = {
@@ -56,7 +56,7 @@ class ListItem extends Component {
     }
 
     componentDidMount() {
-        console.log(urlForSearch('Brazil'));
+        // console.log(urlForSearch('Brazil'));
         fetch(urlForSearch('Brazil'))
             .then(response => {
                 if (!response.ok) {
@@ -69,11 +69,11 @@ class ListItem extends Component {
             .then(d => {
 
                 // console.log(d.response.results),
-                    // console.log(d.response.results),
-                    this.setState({
-                        response: d.response
+                // console.log(d.response.results),
+                this.setState({
+                    response: d.response
 
-                    })
+                })
             }, () => {
                 this.setState({
                     requestFailed: true
@@ -86,11 +86,11 @@ class ListItem extends Component {
         return (
 
             <ul className="post_nav">
-             {this.state.response.results.map((value, id) => {
+                {this.state.response.results.map((value, id) => {
                     return <ItensNavbar key={id} new={value} />
                 }
                 )}
-             
+
             </ul>
         );
     }

@@ -70,7 +70,7 @@ class News extends Component {
     componentDidMount() {
         console.log(this.props);
         console.log(this.props.params.news);
-        fetch(urlForSearch(this.props.params.news))
+        fetch(urlForSearch(this.props.params.title))
             .then(response => {
                 if (!response.ok) {
                     throw Error("Network request failed")
@@ -85,27 +85,28 @@ class News extends Component {
             })
     }
     render() {
+        console.log(this.state.response);
         var response = this.state.response.results[0];
         var published = new Date(response.fields.lastModified);
         return (
             <div className="newsBody">
-                <NewsBar />
+                {/* <NewsBar /> */}
                 <NavbarLeft />
                 <div className="col-lg-6" >
-                    <article className="featured_article">
-                        <h1 className="article_section">
+                    <article className="article_news">
+                        <h1 className="article_title_news">
                             {response.fields.headline}
                         </h1>
                         <br />
                         Published on {published.toDateString()}
                         <h5>{response.fields.trailText}</h5>
 
-                        <div className="article_body">
-                            <a href="pages/single_page.html">
-                                <img src={response.fields.thumbnail} alt="" />
-                            </a>
+                        <div className="article_body_news">
+                            <img src={response.fields.thumbnail} alt="" />
                             {response.fields.trailText}
-                            <div dangerouslySetInnerHTML={{ __html: response.fields.body }} />
+                            <p>
+                                <div dangerouslySetInnerHTML={{ __html: response.fields.body }} />
+                            </p>
                         </div>
                         <p className="col-lg-6">
                             Author: {response.fields.byline}
