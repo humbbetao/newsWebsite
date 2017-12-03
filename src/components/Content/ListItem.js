@@ -5,9 +5,6 @@ const urlForSearch = tema =>
 'http://content.guardianapis.com/search?show-elements=all&show-fields=all&q=game&api-key=4e95ee67-2a00-4f2b-a66a-f5288cf2934f'
 
 class ListItem extends Component {
-    constructor(props) {
-        super(props);
-    }
     state = {
         response: {
             status: "",

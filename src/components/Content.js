@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Flexbox from 'flexbox-react';
 import CenterMode from './Content/CenterMode';
 import BodyNews from './Content/BodyNews';
 import './content.css'

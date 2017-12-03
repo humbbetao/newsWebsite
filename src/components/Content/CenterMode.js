@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
+import Slider from 'react-slick';
+import NewsBar from './Newsbar';
 import SliderItem from './SliderItem';
 import './slide.css'
-import Slider from 'react-slick';
-import { Carousel } from 'react-responsive-carousel';
-import NewsBar from './Newsbar';
 
 const urlForSearch = tema =>
     'http://content.guardianapis.com/search?section=technology&order-by=relevance&use-date=last-modified&show-fields=all&q=technology&api-key=4e95ee67-2a00-4f2b-a66a-f5288cf2934f'
@@ -30,10 +29,6 @@ const urlForSearch = tema =>
 //     );
 // }
 class CenterMode extends Component {
-    constructor(props) {
-        super(props)
-
-    }
     state = {
         response: {
             status: "",

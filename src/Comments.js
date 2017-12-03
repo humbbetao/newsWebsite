@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import * as todoActions from './actions/todos';
 import { connect } from 'react-redux';
-
+import CounterComments from './CounterComments';
 class Comment extends Component {
     constructor(props) {
         super(props);
@@ -19,7 +19,6 @@ class Comment extends Component {
     };
 
     render() {
-        {/* Single Page Application */ }
         return (
             <div classNameName="col-lg-9">
                 <ul>
@@ -27,6 +26,7 @@ class Comment extends Component {
                         <li key={todo.id}>{todo.text}</li>
                     ))}
                 </ul>
+                <CounterComments/>
                 <h3>Leave a replay</h3>
                 <form>
                     <div className="form-group">

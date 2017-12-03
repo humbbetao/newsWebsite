@@ -1,22 +1,21 @@
 import React, { Component } from 'react';
 import './bodyNews.css'
-class ItensPopularPost extends Component {
-    constructor(props) {
-        super(props);
-    }
-    render() {
+import { Link } from 'react-router';
 
+class ItensPopularPost extends Component {
+    render() {
+        var headline = "\"".concat(this.props.value.fields.headline)
+        headline.concat("\"")
         return (
             <li>
                 <div className="media">
-                    <a className="media-right" href="pages/single_page.html">
+                    <Link to={"news/" + headline + "\""} >
                         <img src={this.props.value.fields.thumbnail} alt="" />
-                    </a>
+                    </Link>
                     <div className="media-body">
-                        <a className="catg_title" href="#">
+                        <Link className="catg_title" to={"news/" + headline + "\""} >
                             {this.props.value.webTitle}
-                        </a>
-                        
+                        </Link>
                     </div>
                 </div>
             </li>

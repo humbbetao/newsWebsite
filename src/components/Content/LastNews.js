@@ -3,10 +3,6 @@ import './lastNews.css'
 import ListItem2 from './LisItem2';
 
 class LastNews extends Component {
-    constructor(props){
-        super(props);
-    }
-
     render() {
 
         return (

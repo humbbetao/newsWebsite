@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import NewsBar from './components/Content/Newsbar';
 import NavbarRight from './components/Content/NavbarRight';
+import NavbarLeft from './components/Content/NavbarLeft';
 import Comments from './Comments';
 import './newsBody.css';
 
@@ -13,7 +14,7 @@ const urlForSearch = headline =>
 class News extends Component {
     constructor(props) {
         super(props);
-        console.log( props);
+        console.log(props);
     }
 
 
@@ -84,24 +85,31 @@ class News extends Component {
             })
     }
     render() {
-        console.log(this.state.response)
+        var response = this.state.response.results[0];
+        var published = new Date(response.fields.lastModified);
         return (
             <div className="newsBody">
                 <NewsBar />
-                <div className="col-lg-9" >
+                <NavbarLeft />
+                <div className="col-lg-6" >
                     <article className="featured_article">
                         <h1 className="article_section">
-                            {this.state.response.results[0].fields.headline}
+                            {response.fields.headline}
                         </h1>
+                        <br />
+                        Published on {published.toDateString()}
+                        <h5>{response.fields.trailText}</h5>
+
                         <div className="article_body">
                             <a href="pages/single_page.html">
-                                <img src={this.state.response.results[0].fields.thumbnail} alt="" />
+                                <img src={response.fields.thumbnail} alt="" />
                             </a>
-
-
-                            {this.state.response.results[0].fields.trailText}
-                            <div dangerouslySetInnerHTML={{ __html: this.state.response.results[0].fields.body }} />
+                            {response.fields.trailText}
+                            <div dangerouslySetInnerHTML={{ __html: response.fields.body }} />
                         </div>
+                        <p className="col-lg-6">
+                            Author: {response.fields.byline}
+                        </p>
                     </article>
                     <div>
                     </div>

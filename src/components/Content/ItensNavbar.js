@@ -2,12 +2,7 @@ import React, { Component } from 'react';
 import './bodyNews.css'
 
 class ItensNavbar extends Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
-
         return (
             <li>
                 <figure className="effect-lily">

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Flexbox from 'flexbox-react';
 import Labels from './Footer/Labels';
 import Sending from './Footer/Sending';
 import './footer.css';

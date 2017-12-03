@@ -6,10 +6,6 @@ const urlForSearch = 'http://content.guardianapis.com/search?section=technology&
 
 
 class ListItemPopularPost extends Component {
-    constructor(props) {
-        super(props)
-
-    }
     state = {
         response: {
             status: "",

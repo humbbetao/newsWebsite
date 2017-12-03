@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
 import './bodyNews.css'
 class ItensListContaintBar extends Component {
-    constructor(props) {
-        super(props);
-    }
     render() {
-
         return (
             <li>
                 <div className="media">
