@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ItensNavbar from './ItensNavbar';
-import './bodyNews.css'
+import './css/bodyNews.css'
 const urlForSearch = tema =>
     'http://content.guardianapis.com/search?show-elements=all&show-fields=all&q=game&api-key=4e95ee67-2a00-4f2b-a66a-f5288cf2934f'
 

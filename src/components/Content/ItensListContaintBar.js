@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './bodyNews.css'
+import './css/bodyNews.css'
 class ItensListContaintBar extends Component {
     render() {
         return (

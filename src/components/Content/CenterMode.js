@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
-import NewsBar from './Newsbar';
 import SliderItem from './SliderItem';
-import './slide.css'
-// import SearchApp from './SearchApp';
+import './css/slide.css'
 import fetchingData from './FetchingData'
 
 const url = 'http://content.guardianapis.com/search?section=technology&order-by=relevance&use-date=last-modified&show-fields=all&q=technology&api-key=4e95ee67-2a00-4f2b-a66a-f5288cf2934f'

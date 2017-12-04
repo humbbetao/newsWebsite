@@ -1,6 +1,7 @@
 .left_sidebar{
     margin:0px;
     border:0px;
+    
 }
 
 .single_widget h2{
@@ -12,6 +13,8 @@
     color:#fff;
     margin:0px;
     border:0px;
+    margin-top:15px;
+    
 }
 
 

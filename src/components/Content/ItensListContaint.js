@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './itensListContaint.css'
+import './css/itensListContaint.css'
 import { Link } from 'react-router';
 
 class ItensListContaint extends Component {

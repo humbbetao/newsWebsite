@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import * as todoActions from '../actions/todos';
+import * as todoActions from '../../actions/todos';
 import CounterComments from './CounterComments';
 import FormsErrors from './FormErrors';
 import './css/comments.css'
@@ -66,7 +66,7 @@ class Comment extends Component {
     }
 
     addNewComment = (e) => {
-        e.preventDefault();
+        // e.preventDefault();
 
         if (this.state.formValid) {
             this.props.addComment(this.state.user, this.state.email, this.state.comment);

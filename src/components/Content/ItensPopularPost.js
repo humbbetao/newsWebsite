@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './bodyNews.css'
+import './css/bodyNews.css'
 import { Link } from 'react-router';
 
 class ItensPopularPost extends Component {
@@ -9,11 +9,11 @@ class ItensPopularPost extends Component {
         return (
             <li>
                 <div className="media">
-                    <Link className="media-right" to={"news/" + headline + "\""} >
+                    <Link className="media-right" to={'news/' + headline + "\""} >
                         <img src={this.props.value.fields.thumbnail} alt="" />
                     </Link>
                     <div className="media-body">
-                        <Link className="catg_title" to={"news/" + headline + "\""} >
+                        <Link className="catg_title" to={'news/' + headline + "\""} >
                             {this.props.value.webTitle}
                         </Link>
                     </div>

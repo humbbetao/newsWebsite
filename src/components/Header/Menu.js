@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Flexbox from 'flexbox-react';
 import Logo from './Logo';
 import MenuItens from './MenuItens';
 import BarSearch from './BarSearch';

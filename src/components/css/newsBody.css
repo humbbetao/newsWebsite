@@ -13,10 +13,6 @@ newsBody{
     border-bottom: 1px solid #ccc;
 }
 
-.newsBody .single_widget {
-    padding-top: 5%;
-}
-
 .article_news {
     margin: 0px;
     border: 0px;
@@ -39,7 +35,7 @@ newsBody{
 .article_body_news {
     margin: 0px;
     border: 0px;
-    padding-top: 5%;
+
     text-align: left;
     font-family: 'Domine-Regular';
     font-size: 11pt;

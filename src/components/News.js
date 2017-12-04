@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import NewsBar from './Content/Newsbar';
 import NavbarRight from './Content/NavbarRight';
 import NavbarLeft from './Content/NavbarLeft';
-import Comments from './Comments';
+import Comments from './Content/Comments';
 import './css/newsBody.css';
 
 // import SearchNews from './SearchNews'

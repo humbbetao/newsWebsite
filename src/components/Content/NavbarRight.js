@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './navbarRight.css'
+import './css/navbarRight.css'
 import PopularPost from './PopularPost';
 
 

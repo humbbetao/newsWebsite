@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ListItem from './ListItem';
-import './navbarLeft.css'
+import './css/navbarLeft.css'
 
 class NavbarLeft extends Component {
 

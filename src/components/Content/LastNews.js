@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './lastNews.css'
-import ListItem2 from './LisItem2';
+import './css/lastNews.css'
+import ListNews from './ListNews';
 
 class LastNews extends Component {
     render() {
@@ -9,7 +9,7 @@ class LastNews extends Component {
             <div className="col-lg-6 col-md-6 col-sm-8">
                 <div className="middle_content">
                     <h2>What’s Hot</h2>
-                    <ListItem2 query={this.props.query}/>
+                    <ListNews query={this.props.query}/>
                 </div>
             </div>
         );
