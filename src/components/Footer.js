@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Labels from './Footer/Labels';
 import Sending from './Footer/Sending';
-import './footer.css';
+import './css/footer.css';
 
 class Footer extends Component {
   render() {

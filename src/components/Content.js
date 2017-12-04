@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import CenterMode from './Content/CenterMode';
 import BodyNews from './Content/BodyNews';
-import './content.css'
+import './css/content.css'
 
 class Content extends Component {
 

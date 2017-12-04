@@ -3,13 +3,13 @@ import Flexbox from 'flexbox-react';
 import Logo from './Logo';
 import MenuItens from './MenuItens';
 import BarSearch from './BarSearch';
-import Path from '../../Path';
+import Path from '../Path';
 
 class Menu extends Component {
     render() {
         return (
             <div>
-                {/* <Logo /> */}
+                <Logo />
                 <MenuItens list={Path} />
                 <BarSearch />
             </div>

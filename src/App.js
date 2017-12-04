@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
-import Home from './components/Home';
+import Home from './components/pages/Home';
 import Content from './components/Content';
-import Technology from './components/Technology'
-import Computers from './components/Computers'
-import Mobile from './components/Mobile'
-import VideoGames from './components/VideoGames'
-import News from './News';
+import Technology from './components/pages/Technology'
+import Computers from './components/pages/Computers'
+import Mobile from './components/pages/Mobile'
+import VideoGames from './components/pages/VideoGames'
+import News from './components/News';
 
 import store from './store';
 

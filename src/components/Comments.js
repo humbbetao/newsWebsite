@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import * as todoActions from './actions/todos';
+import * as todoActions from '../actions/todos';
 import CounterComments from './CounterComments';
 import FormsErrors from './FormErrors';
-import './comments.css'
+import './css/comments.css'
 
 class Comment extends Component {
     state = {

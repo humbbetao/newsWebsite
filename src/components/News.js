@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import NewsBar from './components/Content/Newsbar';
-import NavbarRight from './components/Content/NavbarRight';
-import NavbarLeft from './components/Content/NavbarLeft';
+import NewsBar from './Content/Newsbar';
+import NavbarRight from './Content/NavbarRight';
+import NavbarLeft from './Content/NavbarLeft';
 import Comments from './Comments';
-import './newsBody.css';
+import './css/newsBody.css';
 
 // import SearchNews from './SearchNews'
 
