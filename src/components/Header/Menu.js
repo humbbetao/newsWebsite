@@ -8,11 +8,11 @@ import Path from '../../Path';
 class Menu extends Component {
     render() {
         return (
-            <Flexbox flexDirection="row" >
-                <Logo />
+            <div>
+                {/* <Logo /> */}
                 <MenuItens list={Path} />
                 <BarSearch />
-            </Flexbox>
+            </div>
         );
     }
 }

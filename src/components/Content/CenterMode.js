@@ -10,7 +10,7 @@ const url = 'http://content.guardianapis.com/search?section=technology&order-by=
 
 class CenterMode extends Component {
     componentDidMount() {
-        
+
         if (this.props.error) {
             return <p>{this.props.error.message}</p>;
         }
@@ -28,7 +28,8 @@ class CenterMode extends Component {
             dots: true,
             centerMode: true,
             slidesToShow: 1,
-             variableWidth: true,
+            slidesToScroll: 1,
+            variableWidth: true,
         };
         return (
 

@@ -1,29 +1,16 @@
-.navbarLeft {
-    background-color: blue;
-}
-
-.navbarRight {
-    background-color: red;
-}
-
-lastNews {
-    background-color: green;
-}
 
 .left_sidebar {
-    float: left;
-    display: inline;
     width: 100%
+}
+.single_widget_Right{
+    padding: 0 10px 30px;
+    width: 100%;
 }
 
 .single_widget {
     display: inline;
-    float: left;
     padding: 0 10px 30px;
     width: 100%;
-    border-left: 1px solid #e3e3e3;
-    border-right: 1px solid #e3e3e3;
-    border-bottom: 1px solid #e3e3e3
 }
 
 .single_widget>h2 {
@@ -127,7 +114,7 @@ figure.effect-lily figcaption.text_lilly a {
 }
 
 .containerBody {
-    padding-top: 1%;
+    padding-top: 2%;
     text-decoration: None;
     margin: 0px;
     border: 0px;

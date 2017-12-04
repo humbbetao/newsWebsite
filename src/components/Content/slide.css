@@ -17,9 +17,12 @@
 .sampleArrows {
     z-index: 5;
     width: 100%;
-    display: flex !important;
+    /* display:  !important; */
 }
 
+.slider{
+    border-bottom:20px;
+}
 .sliderBar {
     border-radius: 0px;
     background-color: #0063B1;
@@ -89,4 +92,12 @@
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
     font-size: 13pt;
+}
+
+.slick-arrow .slick-next{
+    display: none !important;
+    
+}
+.slick-next, .slick-prev{
+    display: none !important;
 }

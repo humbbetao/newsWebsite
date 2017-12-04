@@ -9,7 +9,6 @@ class Logo extends Component {
                 <Link className="navbar-brand" to="/" >
                     News Cyber
                 </Link>
-
             </div >
         );
     }

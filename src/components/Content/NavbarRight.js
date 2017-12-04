@@ -7,7 +7,7 @@ class NavbarRight extends Component {
     render() {
 
         return (
-            <div className="col-lg-3 col-md-3 col-sm-12">
+            <div className="col-lg-3 col-md-3 col-sm-4">
                 <div className="right_sidebar ">
                     <PopularPost />
                 </div>

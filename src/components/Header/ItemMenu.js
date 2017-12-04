@@ -7,7 +7,8 @@ class ItemMenu extends Component {
 
         return (
 
-            <li>{this.props.url === "/" ?
+
+            this.props.url === "/" ?
                 <Link exact="true"
                     activeClassName='is-active'
                     to={this.props.url}>
@@ -17,9 +18,9 @@ class ItemMenu extends Component {
                     activeClassName='is-active'
                     to={this.props.url}>
                     {this.props.itemName}
-                </Link>}
+                </Link>
 
-            </li>
+
         );
     }
 }
