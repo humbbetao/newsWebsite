@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
 import SliderItem from './SliderItem';
-import './css/slide.css'
-import fetchingData from './FetchingData'
+import fetchingData from './FetchingData';
+import './css/slide.css';
 
 const url = 'http://content.guardianapis.com/search?section=technology&order-by=relevance&use-date=last-modified&show-fields=all&q=technology&api-key=4e95ee67-2a00-4f2b-a66a-f5288cf2934f'
 

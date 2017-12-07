@@ -3,7 +3,7 @@ import {Link} from 'react-router';
 
 class ItensNavbar extends Component {
     render() {
-        var headline = this.props.new.fields.headline
+        var headline = ("\"").concat(this.props.new.fields.headline).concat("\"");
         return (
             <li>
                 <figure className="effect-lily">
