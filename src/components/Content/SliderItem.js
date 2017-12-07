@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
-import './css/slide.css'
 class SliderItem extends Component {
     render() {
         var headline = "\"".concat(this.props.value.fields.headline)

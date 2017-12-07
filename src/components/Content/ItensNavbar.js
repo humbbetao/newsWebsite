@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './css/bodyNews.css';
 import {Link} from 'react-router';
 
 class ItensNavbar extends Component {

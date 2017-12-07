@@ -1,12 +1,21 @@
 .right_sidebar h2{
     width: 100%;
-    padding:5%;
     background-color: #E81123;
     border-radius:5px;
     font-size: 15pt;
-    color:#fff;
-    margin:0px;
-    border:0px;
     text-align: center;
     display: inline-grid;
+    color:#fff;
+    margin: 0px;
+    border: 0px;
+    padding: 5%;
+    margin-top:10%;
+    font-family: 'Belgrano-Regular';
+
+}
+
+.single_widget_Right{
+    padding: 0 10px 30px;
+    width: 100%;
+    font-family: 'Domine-Regular';
 }

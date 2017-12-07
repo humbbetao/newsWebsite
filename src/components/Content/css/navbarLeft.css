@@ -1,20 +1,37 @@
-.left_sidebar{
-    margin:0px;
-    border:0px;
-    
-}
-
-.single_widget h2{
+.left_sidebar {
+    margin: 0px;
+    border: 0px;
     width: 100%;
-    padding:5%;
-    background-color: #FF8C00;
-    border-radius:5px;
-    font-size: 15pt;
-    color:#fff;
-    margin:0px;
-    border:0px;
-    margin-top:15px;
+    font-family: 'Domine-Regular';
     
 }
 
 
+.single_widget {
+    display: inline;
+    width: 100%;
+    font-family: 'Domine-Regular';
+
+}
+
+.single_widget h2 {
+    width: 100%;
+    background-color: #FF8C00;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 15pt;
+    color: #fff;
+    text-align: center;
+    display: inline-grid;
+    /* margin-top: 10px */
+    margin: 0px;
+    border: 0px;
+    padding: 5%;
+    margin-top:10%;
+    font-family: 'Belgrano-Regular';
+}
+
+.single_widget>h2 a {
+    color: #fff;
+    font-family: 'Arvo', serif
+}

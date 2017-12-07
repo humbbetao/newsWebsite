@@ -1,6 +1,8 @@
 .middle_content{
     display: inline;
     width: 100%;
+    font-family: 'Domine-Regular';
+
 }
 
 .middle_content>h2 {
@@ -19,6 +21,8 @@
     text-align: center;
     display: inline-grid;
     padding: 15px;
+    margin-top: 5%;
+    font-family: 'Belgrano-Regular';
 }
 
 

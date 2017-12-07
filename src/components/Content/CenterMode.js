@@ -47,5 +47,3 @@ class CenterMode extends Component {
 
 
 export default fetchingData(url)(CenterMode);
-
-

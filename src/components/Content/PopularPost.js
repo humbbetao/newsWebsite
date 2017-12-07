@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './css/bodyNews.css'
 import ListItemPopularPost from './ListItemPopularPost';
 
 class PopularPost extends Component {

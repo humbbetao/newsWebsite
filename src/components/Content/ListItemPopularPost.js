@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './css/bodyNews.css'
 import ItensPopularPost from './ItensPopularPost';
 
 const urlForSearch = 'http://content.guardianapis.com/search?section=technology&show-fields=all&q=videos&api-key=4e95ee67-2a00-4f2b-a66a-f5288cf2934f'

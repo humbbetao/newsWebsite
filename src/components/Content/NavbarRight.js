@@ -9,6 +9,7 @@ class NavbarRight extends Component {
         return (
             <div className="col-lg-3 col-md-3 col-sm-4">
                 <div className="right_sidebar ">
+                
                     <PopularPost />
                 </div>
             </div>

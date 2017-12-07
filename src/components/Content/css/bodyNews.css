@@ -1,35 +1,8 @@
 
-.left_sidebar {
-    width: 100%
-}
-.single_widget_Right{
-    padding: 0 10px 30px;
-    width: 100%;
-}
-
-.single_widget {
-    display: inline;
-
-    width: 100%;
-}
-
-.single_widget>h2 {
-    color: #fff;
-    font-size: 19px;
-    margin: 0 0 20px -10px;
-    text-align: center;
-    width: 107.1%;
-    margin:0px;
-}
-
-.single_widget>h2 a {
-    color: #fff;
-    font-family: 'Arvo', serif
-}
-
 .post_nav {
     padding-left: 5%;
     padding-right: 5%;
+    font-family: 'Domine-Regular';
 }
 
 .post_nav {
@@ -42,7 +15,8 @@
     float: left;
     width: 100%;
     margin-bottom: 30px;
-    padding-bottom: 10px
+    padding-bottom: 10px;
+    
 }
 
 .post_nav figure {
@@ -114,7 +88,7 @@ figure.effect-lily figcaption.text_lilly a {
 }
 
 .containerBody {
-    padding-top: 2%;
+    /* padding-top: 2%; */
     text-decoration: None;
     margin: 0px;
     border: 0px;

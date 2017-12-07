@@ -1,14 +1,8 @@
-body{
-    margin:0px;
-    border:0px;
-    padding:0px;
-}
-
 @font-face {
     font-family: 'Quantify Bold';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/Quantify Bold v2.6.ttf'); /* IE9 Compat Modes */
+    src: local('Quantify Bold v2.6.ttf'), url('../fonts/Quantify Bold v2.6.ttf'); /* IE9 Compat Modes */
   }
 
 
@@ -16,7 +10,7 @@ body{
     font-family: 'Belgrano-Regular';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/Belgrano-Regular.ttf' ); /* IE9 Compat Modes */
+    src: local('Belgrano-Regular.ttf'), url('../fonts/Belgrano-Regular.ttf' ); /* IE9 Compat Modes */
   }
 
 
@@ -24,7 +18,7 @@ body{
     font-family: 'Domine-Bold';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/Domine-Bold.ttf' ); /* IE9 Compat Modes */
+    src:  local('Domine-Bold.ttf'), url('../fonts/Domine-Bold.ttf' ); /* IE9 Compat Modes */
   }
 
 
@@ -32,10 +26,13 @@ body{
     font-family: 'Domine-Regular';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/Domine-Regular.ttf' ); /* IE9 Compat Modes */
+    src: local('Domine-Regular.ttf'), url('../fonts/Domine-Regular.ttf' ); /* IE9 Compat Modes */
   }
 
 
   body{
     font-family: 'Domine-Regular';
-  }
+    margin:0px;
+    border:0px;
+    padding:0px;
+}

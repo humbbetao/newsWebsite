@@ -4,6 +4,7 @@
     border: 0px;
     margin: 0px;
     font-size: 16pt;
+    font-family: 'Belgrano-Regular';
 }
 
 .navbar-header {
@@ -80,6 +81,7 @@
     -moz-border-radius: 5px;
     border-radius: 5px;
     margin-top: 8px;
+    font-family: 'Domine-Regular';
 }
 
 .container-1 input#search::-webkit-input-placeholder {

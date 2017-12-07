@@ -1,5 +1,5 @@
-#footer{float:left; display:inline; width:100%; display:inline-block}
-.footer_top{background-color:#0078D7; display:inline; float:left; width:100%; padding-bottom:15px}
+#footer{float:left; display:inline; width:100%; display:inline-block;font-family: 'Domine-Regular';}
+.footer_top{background-color:#0078D7; display:inline; float:left; width:100%; padding-bottom:15px;    font-family: 'Belgrano-Regular';}
 .footer_widget{float:left; display:inline; width:100%}
 .footer_widget > h2{color:#fff; font-size:19px; font-weight:20pt; margin-bottom:12px; padding-bottom:8px; text-transform:none; font-weight: 28pt;}
 .footer_widget > h2:before{display:inline-block; padding-right:5px}
