@@ -1,6 +1,6 @@
-export function SearchTerm(searchTerm){
+export function searchTerm(query){
     return {
-        type:'SEARCH',
-        searchTerm,
+        type:'SEARCH_TERM',
+        query,
     }
 }
