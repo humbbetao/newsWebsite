@@ -6,6 +6,11 @@
     font-size: 16pt;
     font-family: 'Belgrano-Regular';
 }
+.navbar-brand {
+    color:#fff !important;
+    font-family: 'Quantify Bold';
+    font-size:26pt; 
+}
 
 .navbar-header {
     width: 10%;
