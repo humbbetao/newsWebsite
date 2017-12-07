@@ -4,16 +4,16 @@ import { Link } from 'react-router';
 
 class ItensPopularPost extends Component {
     render() {
-        var headline = "\"".concat(this.props.value.fields.headline)
-        headline.concat("\"")
+        var headline = "\"".concat(this.props.value.fields.headline).concat("\"")
+        // headline
         return (
             <li>
                 <div className="media">
-                    <Link className="media-right" to={'news/' + headline + "\""} >
+                    <Link className="media-right" to={'news/' + headline } >
                         <img src={this.props.value.fields.thumbnail} alt="" />
                     </Link>
                     <div className="media-body">
-                        <Link className="catg_title" to={'news/' + headline + "\""} >
+                        <Link className="catg_title" to={'news/' + headline } >
                             {this.props.value.webTitle}
                         </Link>
                     </div>
