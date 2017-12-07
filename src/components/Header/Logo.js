@@ -1,15 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
-import './logo.css';
-
+import './Logo.css'
 class Logo extends Component {
     render() {
         return (
-            <div className="navbar-header">
-                <Link className="navbar-brand" to="/" >
-                    News Cyber
-                </Link>
-            </div >
+            <Link className="navbar-brand" to="/" >
+                Cyber News
+            </Link>
         );
     }
 }

@@ -1,0 +1,25 @@
+.navbar-header {
+    width: 10%;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    padding-top: 8px;
+    font-size: 16pt;
+    height: 100%;
+}
+
+.navbar-brand {
+    color: #fff;
+    background-color: #03A9F4;
+    font-family: 'Quantify Bold';
+    font-weight: bold;
+    height: 72px;
+    margin: 0px;
+    border: 0px;
+    font-size: 25pt;
+    padding-top: 25px;
+}
+
+.navbar-brand :hover {
+    background-color: #fff;
+}
