@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Labels from './Footer/Labels';
 import Sending from './Footer/Sending';
+import FooterBottom from './Footer/FooterBottom'
 import './css/footer.css';
 
 class Footer extends Component {
@@ -21,12 +22,7 @@ class Footer extends Component {
           </div>
         </div>
 
-        <div className="footer_bottom">
-          <div className="container">
-            <p className="copyright">Copyright &copy; 2017 <a href="index.html">Cyber news</a></p>
-            <p className="developer">Developed By Humberto Gonçalves</p>
-          </div>
-        </div>
+       <FooterBottom/>
       </footer>
     );
   }

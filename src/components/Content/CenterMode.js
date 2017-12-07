@@ -30,16 +30,12 @@ class CenterMode extends Component {
             variableWidth: true,
         };
         return (
-
-
-
             < div className="slider" >
                 <Slider {...settings}>
                     {this.props.response.results.map((value, id) =>
                         <SliderItem key={id} value={value} />
                     )}
                 </Slider>
-
             </div >
         );
     }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
-import './Logo.css'
+import './css/Logo.css'
 class Logo extends Component {
     render() {
         return (

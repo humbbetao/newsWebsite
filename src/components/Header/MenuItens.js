@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ItemMenu from './ItemMenu';
-import './MenuItens.css';
+import './css/MenuItens.css';
 
 class MenuItens extends Component {
     render() {
@@ -10,8 +10,6 @@ class MenuItens extends Component {
                     <ItemMenu key={id} itemName={item.nome} url={item.url} />
                 )}
             </ul>
-           
-
         );
     }
 }

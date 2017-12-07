@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as searchActions from '../../actions/search';
-import './BarSearch.css'
+import './css/BarSearch.css'
 
 class BarSearch extends Component {
     constructor(props) {

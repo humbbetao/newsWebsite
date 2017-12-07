@@ -4,7 +4,6 @@ import { Link } from 'react-router';
 class ItensPopularPost extends Component {
     render() {
         var headline = "\"".concat(this.props.value.fields.headline).concat("\"")
-        // headline
         return (
             <li>
                 <div className="media">
