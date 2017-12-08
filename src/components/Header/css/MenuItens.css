@@ -48,3 +48,8 @@
     background-color: #03A9F4;
     color: #fff;
 }
+
+.navbar-nav li a:active {
+    background-color: #fff;
+    color: #03A9F4;
+}

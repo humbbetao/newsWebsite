@@ -5,11 +5,9 @@ import { Link } from 'react-router';
 class ItensListContaint extends Component {
     render() {
         var headline =this.props.new.fields.headline
-        // headline = headline
         return (
             <li>
                 <article className="featured_article">
-
                     <div className="article_body">
                         <Link to={'news/'.concat(headline)} >
                             <img src={this.props.new.fields.thumbnail} alt="" />
@@ -25,14 +23,10 @@ class ItensListContaint extends Component {
                             {this.props.new.fields.trailText}
                         </div>
                     </div>
-
-
                 </article>
             </li >
         );
     }
 }
-
-
 
 export default ItensListContaint;

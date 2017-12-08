@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import './footer.css';
+import './css/sending.css';
+
 class Sending extends Component {
     render() {
         return (

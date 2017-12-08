@@ -6,19 +6,11 @@ class ItemMenu extends Component {
     render() {
 
         return (
-
-            <li>{this.props.url === "/" ?
-                <Link exact="true"
-                    activeClassName='is-active'
-                    to={this.props.url}>
-                    {this.props.itemName}
-                </Link> :
+            <li>
                 <Link
-                    activeClassName='is-active'
                     to={this.props.url}>
                     {this.props.itemName}
-                </Link>}
-
+                </Link>
             </li>
         );
     }

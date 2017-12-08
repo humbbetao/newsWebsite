@@ -5,7 +5,7 @@ import './css/MenuItens.css';
 class MenuItens extends Component {
     render() {
         return (
-            <ul className="nav navbar-nav navbar-collapse">
+            <ul className="nav navbar-nav">
                 {this.props.list.map((item, id) =>
                     <ItemMenu key={id} itemName={item.nome} url={item.url} />
                 )}

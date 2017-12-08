@@ -1,0 +1,19 @@
+#subscribe-text{
+    text-align: center;
+    color:#fff;
+    font-weight: bold;
+    margin-top: 2%;
+}
+
+.footer_bottom {
+    background-color: #0063B1;
+    color: #fff;
+    display: inline;
+    float: left;
+    padding: 15px 0 5px;
+    width: 100%
+}
+
+.footer_bottom {
+    text-align: center;
+}

@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import Path from '../Path';
 import { Link } from 'react-router';
-import './footer.css'
+import Path from '../Path';
+import './css/labels.css'
+
 class Labels extends Component {
     render() {
 
         return (
-            <div className="footer_widget wow fadeInLeftBig">
+            <div className="footer_widget">
                 <h2>Site's map</h2>
                 <ul className="labels_nav">
 
@@ -17,12 +18,10 @@ class Labels extends Component {
                                     {item.nome}
                                 </Link>
                             </li>)
-
                     })}
-
-
                 </ul>
-            </div>);
+            </div>
+        );
     }
 }
 

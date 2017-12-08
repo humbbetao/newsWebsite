@@ -1,0 +1,36 @@
+.labels_nav{
+    float:left;
+}
+
+.labels_nav ul {
+    list-style: none;
+}
+
+.labels_nav {
+    padding-left: 20px;
+    position: relative;
+    list-style: none;
+    color: #fff;
+}
+
+.labels_nav li {
+    margin: 0 0 0 20px;
+    font-weight: 16pt;
+    color: #fff;
+    padding: 0 0 5px;
+    text-transform: capitalize;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.labels_nav li:before {
+    background-color: #fff;
+    position: absolute;
+    width: 8px
+}
+
+.labels_nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+

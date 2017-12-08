@@ -15,12 +15,14 @@
     height: 100%;
     height: 300px;
     opacity: 1;
+    max-height: 300px;
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
     transition: opacity 0.35s, transform 0.35s;
     -webkit-transform: translate3d(-30px, 0, 0) scale(1.12);
     transform: translate3d(-30px, 0, 0) scale(1.12);
     -webkit-backface-visibility: hidden;
-    backface-visibility: hidden
+    backface-visibility: hidden;
+
 }
 
 .featured_article {
@@ -141,10 +143,80 @@
     -moz-transition: all 0.3s;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
+    max-height: 300px;
 }
 
 .article_body img:hover {
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+}
+
+
+.post_nav {
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: 'Domine-Regular';
+}
+
+.post_nav {
+    margin-top: 5%;
+}
+
+.post_nav li {
+    border-bottom: 1px dashed #ddd;
+    list-style-type: none;
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    
+}
+
+.post_nav figure {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    cursor: pointer
+}
+
+.post_nav figure img {
+    position: relative;
+    display: block;
+    min-height: 100%;
+    max-width: 100%;
+    width: 300px;
+    opacity: 0.8
+}
+
+figure.effect-lily img {
+    max-width: none;
+    width: -webkit-calc(100%+50px);
+    width: calc(100%+50px);
+    opacity: 0.7;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(-40px, 0, 0);
+    transform: translate3d(-40px, 0, 0)
+}
+
+figure.effect-lily a:hover img {
+    opacity: 1
+}
+
+figure.effect-lily a:hover img {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+}
+
+figure.effect-lily figcaption.text_lilly {
+    font-size: 10pt;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+figure.effect-lily figcaption.text_lilly a {
+    text-decoration: none;
 }
