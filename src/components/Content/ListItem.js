@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import ItensNavbar from './ItensNavbar';
+
 import './css/bodyNews.css'
 const urlForSearch = tema =>
-    'http://content.guardianapis.com/search?show-elements=all&show-fields=all&q=game&api-key=4e95ee67-2a00-4f2b-a66a-f5288cf2934f'
+    'http://content.guardianapis.com/search?show-elements=all&show-fields=all&q=game&pageSize=5&api-key=4e95ee67-2a00-4f2b-a66a-f5288cf2934f'
 
 class ListItem extends Component {
     state = {
@@ -87,9 +88,10 @@ class ListItem extends Component {
 
             <ul className="post_nav">
                 {this.state.response.results.map((value, id) => {
-                    return <ItensNavbar key={id} new={value} />
-                }
-                )}
+                    // if (id < 9) {
+                        return (id<9 ? <ItensNavbar key={id} new={value} />: null)
+                    // }
+                })}
 
             </ul>
         );

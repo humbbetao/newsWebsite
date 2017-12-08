@@ -29,9 +29,10 @@
     background: none repeat scroll 0 0 #fff;
     display: inline-block;
     max-width: 100%;
-    border-bottom: 1px solid #ccc;
-    margin-top:10px;
-    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    margin-top:5px;
+    padding-bottom:10px;
+    /* margin-bottom: 10px; */
 }
 
 .article_category {
@@ -164,7 +165,7 @@
 }
 
 .post_nav li {
-    border-bottom: 1px dashed #ddd;
+    border-bottom: 1px solid #ddd;
     list-style-type: none;
     float: left;
     width: 100%;

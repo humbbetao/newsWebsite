@@ -2,12 +2,10 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 class SliderItem extends Component {
     render() {
-        var headline = "\"".concat(this.props.value.fields.headline)
-        headline = headline.concat("\"")
-        // console.log(headline);
+        var headline = 'news/'.concat(this.props.value.fields.headline)
         return (
             <div className="single_iteam">
-                <Link className="slider_img" to={"news/" + headline} >
+                <Link className="slider_img" to={headline} >
                     <img src={this.props.value.fields.thumbnail} alt="" />
 
                     <h2 className="slider_title">

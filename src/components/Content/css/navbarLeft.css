@@ -21,7 +21,6 @@
     font-family: 'Belgrano-Regular';
 }
 
-
 .text_lilly {
     font-size: 10pt;
     font-weight: bold;
@@ -30,7 +29,7 @@
 
 }
 
-.text_lilly:hover {
+.effect-lily:hover> .text_lilly:hover    {
     font-size: 10pt;
     font-weight: bold;
     text-decoration: none;

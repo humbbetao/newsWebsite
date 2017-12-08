@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as searchActions from '../../actions/search';
+import { Redirect } from 'react-router';
 import './css/BarSearch.css'
 
 class BarSearch extends Component {
@@ -20,23 +21,25 @@ class BarSearch extends Component {
     }
 
     handleSubmit(event) {
-        this.props.searchTerm(this.state.query);
-        this.setState({ query: '' })
-        // console.log("pesquisou")
-        event.preventDefault();
+        // this.props.searchTerm(this.state.query);
+        // this.setState({ query: event.target.value });
+        console.log(this.state.query);
+        <Redirect to={'news/:'.concat(this.state.query)} />;
+        // event.preventDefault();
+        // this.setState({ query: '' });
     }
 
     render() {
         return (
             <form className="navbar-form navbar-right hidden-xs">
-                <div className="input-group container-1 ">
+                <div className="input-group container-1">
                     <input className="form-control input-lg" placeholder="Search..." type="text"
                         value={this.state.query}
 
                         onChange={this.handleChange}
                     />
                     <span className="input-group-btn">
-                        <button type="submit" className="btn btn-default input-lg" onClick={this.handleSubmit}>
+                        <button type="submit" className="btn input-lg" onClick={this.handleSubmit}>
                             <span className="glyphicon glyphicon-search"></span>
                         </button>
                     </span>
