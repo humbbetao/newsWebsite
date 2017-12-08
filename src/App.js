@@ -7,6 +7,7 @@ import Computers from './components/pages/Computers'
 import Mobile from './components/pages/Mobile'
 import VideoGames from './components/pages/VideoGames'
 import News from './components/News';
+// import ArticleText from './components/Content/ArticleText';
 
 import store from './store';
 

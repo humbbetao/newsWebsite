@@ -1,4 +1,27 @@
-.single_widget_Right{
+.post_navright {
+    list-style: none;
+    padding: 0px;
+    margin: 5%;
+    text-align: justify;
+
+}
+
+.post_navright>li {
+    margin-top: 5%;
+}
+
+.media-right {
+    width: 50%;
+    height: 50%;
+    max-height: 100px;
+    
+}
+
+.media-right>img {
+    height: 20%;
+}
+
+.single_widget_Right {
     display: inline;
     width: 100%;
     font-family: 'Domine-Regular';
@@ -17,7 +40,11 @@
     margin: 0px;
     border: 0px;
     padding: 5%;
-    margin-top:10%;
+    margin-top: 10%;
     font-family: 'Belgrano-Regular';
+}
 
+
+.catg_title {
+    text-decoration: None !important;
 }

@@ -210,13 +210,3 @@ figure.effect-lily a:hover img {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0)
 }
-
-figure.effect-lily figcaption.text_lilly {
-    font-size: 10pt;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-figure.effect-lily figcaption.text_lilly a {
-    text-decoration: none;
-}

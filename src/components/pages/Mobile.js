@@ -9,11 +9,10 @@ class Mobile extends Component {
     return (
       <div className="content">
         <CenterMode />
-        <BodyNews  query='mobile' />
+        <BodyNews query='mobile' />
       </div>
     );
   }
 }
-
 
 export default Mobile;

@@ -10,8 +10,8 @@ class ItensNavbar extends Component {
                     <Link to={'news/'.concat(headline)} >
                         <img src={this.props.new.fields.thumbnail} alt="" />
                     </Link>
-                    <figcaption className="text_lilly" >
-                        <Link to={'news/'.concat(headline)} >
+                    <figcaption >
+                        <Link  className="text_lilly" to={'news/'.concat(headline)} >
                             {this.props.new.webTitle}
                         </Link>
                     </figcaption>

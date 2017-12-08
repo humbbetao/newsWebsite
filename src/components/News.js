@@ -92,6 +92,7 @@ class News extends Component {
         return (
             <div className="newsBody">
                 <NavbarLeft />
+                
                 <div className="col-lg-6" >
                     <article className="article_news">
                         <h1 className="article_title_news">
@@ -103,8 +104,8 @@ class News extends Component {
                         </p>
                         <div className="article_body_news">
                             <img src={response.fields.thumbnail} alt="" />
-                        
-                                <div dangerouslySetInnerHTML={{ __html: response.fields.body }} />
+
+                            <div dangerouslySetInnerHTML={{ __html: response.fields.body }} />
                         </div>
                         <p className="col-lg-12 author_news">
                             Author: {response.fields.byline}

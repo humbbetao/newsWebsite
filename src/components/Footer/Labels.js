@@ -17,7 +17,8 @@ class Labels extends Component {
                                 <Link to={item.url}>
                                     {item.nome}
                                 </Link>
-                            </li>)
+                            </li>
+                        )
                     })}
                 </ul>
             </div>

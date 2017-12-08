@@ -22,3 +22,18 @@
 }
 
 
+.text_lilly {
+    font-size: 10pt;
+    font-weight: bold;
+    text-decoration: none;
+    color:#232323;  
+
+}
+
+.text_lilly:hover {
+    font-size: 10pt;
+    font-weight: bold;
+    text-decoration: none;
+    color:#FF8C00;;  
+    
+}
