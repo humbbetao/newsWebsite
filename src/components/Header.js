@@ -5,9 +5,12 @@ import './css/header.css';
 class Header extends Component {
   render() {
     return (
-      <nav className="topnav">
-          <Menu />
-      </nav>
+      <header>
+        <Menu/>
+      </header>
+      // <nav className="header">
+      //     <Menu />
+      // </nav>
     );
   }
 }

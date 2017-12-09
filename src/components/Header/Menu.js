@@ -9,6 +9,12 @@ class Menu extends Component {
         return (
             <div>
                 <Logo />
+                
+            <input type="checkbox" id="control-nav" />
+            <label for="control-nav" class="control-nav"></label>
+            <label for="control-nav" class="control-nav-close"></label>
+
+
                 <MenuItens list={Path} />
                 <BarSearch />
             </div>
