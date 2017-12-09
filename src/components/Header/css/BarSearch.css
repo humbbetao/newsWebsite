@@ -1,45 +1,65 @@
-.navbar-form .navar-right .hiddex-xs .input-group .container-1{
-    background-color: #2980b9;   
-}
-.container-1{
-    right: 15px;
+.navbar-form .navbar-right .hiddex-xs {
+    background-color: #2980b9;
+    height: 20%;
+    padding: 0px;
+    padding-left: 0.3%;
+    padding-top: 1%;
 }
 
-.container-1 input#search {
+.input-group {
+    right: 15px;
+    min-width: 15%;
+    min-height: 15%;
+    height: 50%;
+    padding: 0px;
+    padding-left: 0.3%;
+    padding-top: 1%;
+}
+
+.form-control input {
     border: none;
     font-size: 14pt;
     float: left;
     color: #0063B1;
-    padding-left: 45px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
     font-family: 'Domine-Regular';
+    padding: 0px;
+    padding-left: 0.3%;
+    padding-top: 1%;
 }
 
-.container-1 input#search::-webkit-input-placeholder {
+
+.form-control input::-webkit-input-placeholder {
     color: #0063B1;
 }
 
-.container-1 input#search:-moz-placeholder {
+.form-control input:-moz-placeholder {
     /* Firefox 18- */
     color: #0063B1;
 }
 
-.container-1 input#search::-moz-placeholder {
+.form-control input::-moz-placeholder {
     /* Firefox 19+ */
     color: #0063B1;
 }
 
-.container-1 input#search:-ms-input-placeholder {
+.form-control input:-ms-input-placeholder {
     color: #0063B1;
 }
 
-.container-1 input#search:hover,
-.container-1 input#search:focus,
-.container-1 input#search:active {
+.form-control input:hover,
+.form-control input:focus,
+.form-control input:active {
     outline: none;
     background: #ffffff;
+}
+
+input#searchBox {
+    width: 150px;
+    transition: 0.5s;
+}
+
+input#searchBox:focus {
+    width: 300px;
 }
 
 .header .search-container {
@@ -64,4 +84,35 @@
 button {
     border: none;
     background-color: #fff;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    form.navbar-form.form-inline.navbar-right {
+        vertical-align: middle;
+        right: 15%;
+        margin-right: 15%;
+        padding: 0px;
+    }
+    .input-group {
+        z-index: 1;
+    }
+    .form-control input {
+        float: right;
+    }
+    input#searchBox {
+        width: 100px;
+        transition: 0.5s;
+        float: right;
+    }
+    button#searchButton {
+        float: right;
+    }
+    input#searchBox:focus {
+        width: 200px;
+    }
+    .navbar-nav {
+        float: right;
+    }
 }

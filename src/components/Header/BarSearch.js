@@ -31,15 +31,15 @@ class BarSearch extends Component {
 
     render() {
         return (
-            <form className="navbar-form navbar-right hidden-xs">
-                <div className="input-group container-1">
-                    <input className="form-control input-lg" placeholder="Search..." type="text"
+            <form className="navbar-form form-inline navbar-right">
+                <div className="input-group">
+                    <input className="form-control input-lg" id='searchBox' placeholder="Search..." type="text"
                         value={this.state.query}
-
                         onChange={this.handleChange}
                     />
+
                     <span className="input-group-btn">
-                        <button type="submit" className="btn input-lg" onClick={this.handleSubmit}>
+                        <button type="submit" className="btn input-lg" id="searchButton" onClick={this.handleSubmit}>
                             <span className="glyphicon glyphicon-search"></span>
                         </button>
                     </span>
