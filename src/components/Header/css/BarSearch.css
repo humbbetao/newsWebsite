@@ -86,9 +86,38 @@ button {
     background-color: #fff;
 }
 
+@media screen and (max-width: 1024px) {
+    form.navbar-form.form-inline.navbar-right {
+        vertical-align: middle;
+        right: 15%;
+        margin-right: 15%;
+        padding: 0px;
+    }
+    .input-group {
+        z-index: 1;
+    }
+    .form-control input {
+        float: right;
+    }
+    input#searchBox {
+        width: 100px;
+        transition: 0.5s;
+        float: right;
+    }
+    button#searchButton {
+        float: right;
+    }
+    input#searchBox:focus {
+        width: 200px;
+    }
+    .navbar-nav {
+        float: right;
+    }
+}
 
 
-@media screen and (max-width: 900px) {
+
+@media screen and (max-width: 767px) {
     form.navbar-form.form-inline.navbar-right {
         vertical-align: middle;
         right: 15%;

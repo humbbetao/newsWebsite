@@ -6,7 +6,7 @@ class NavbarRight extends Component {
     render() {
 
         return (
-            <div className="col-lg-3 col-md-3 col-sm-4">
+            <div className="col-lg-3 col-md-6 col-sm-6" id="right">
                 <div className="single_widget_Right">
                     <h2>Popular Post</h2>
                     <ListItemPopularPost />

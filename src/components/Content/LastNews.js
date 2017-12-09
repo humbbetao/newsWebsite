@@ -6,11 +6,11 @@ class LastNews extends Component {
     render() {
 
         return (
-            <div className="col-lg-6 col-md-6 col-sm-8">
+            <div className="col-lg-6 col-md-12 col-sm-12" id="center">
                 <div className="middle_content">
                     <h2>What’s Hot</h2>
                     <ListNews query={this.props.query} />
-                   
+                 
                 </div>
             </div>
         );

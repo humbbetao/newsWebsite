@@ -6,7 +6,7 @@ class NavbarLeft extends Component {
 
     render() {
         return (
-            <div className="col-lg-3 col-md-3 col-sm-4">
+            <div className="col-lg-3 col-md-6 col-sm-6" id="left">
                 <div className="single_widget">
                     <h2>Technology</h2>
                     <ListItem />

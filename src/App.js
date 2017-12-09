@@ -21,7 +21,8 @@ class App extends Component {
         <Router history={browserHistory}>
           <Route path='/' component={Home}>
             <IndexRoute component={Content} />
-            <Route path='/news/:title' component={News} />
+            <Route path='/news/:title' component={News}/> 
+            <Route path='/pages/:number' component={News} />
             {/* <Route path='news/:title' component={SearchContent} /> */}
             <Route path='technology' component={Technology} />
             <Route path='computers' component={Computers} />

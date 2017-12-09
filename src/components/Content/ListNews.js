@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
 import ItensListContaint from './ItensListContaint';
 
-const urlForSearch = (query) =>
+const urlForSearch = (query, page) =>
     'http://content.guardianapis.com/search?show-elements=all&show-fields=all&q=' + query + '&api-key=4e95ee67-2a00-4f2b-a66a-f5288cf2934f'
 
 class ListNews extends Component {
@@ -52,10 +53,13 @@ class ListNews extends Component {
                     isHosted: false
                 }
             ]
-        }
+        },
+        pages: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'],
+        page_index: 1
     }
 
     componentDidMount() {
+        console.log(this.props);
         console.log(urlForSearch(this.props.query));
         fetch(urlForSearch(this.props.query))
             .then(response => {
@@ -82,15 +86,18 @@ class ListNews extends Component {
                     })}
                 </ul>
                 <div class="pagination">
-                    <a href="">&laquo;</a>
-                    <a href="">1</a>
-                    <a class="active" href="">2</a>
-                    <a href="">3</a>
-                    <a href="">4</a>
-                    <a href="">5</a>
-                    <a href="">6</a>
-                    <a href="">&raquo;</a>
-                </div>
+                    <Link to={"pages/" + this.state.page_index - 1}> &laquo;
+                    </Link>
+                    {this.state.pages.map((value, id) => {
+
+                        return (<Link key={id} to={"pages/" + value}> {value}
+                        </Link>)
+
+                    })}
+                    <Link to={"pages/" + this.state.page_index + 1}> &raquo;
+                    </Link>
+                    
+                    </div>
             </div>
         );
     }

@@ -8,7 +8,7 @@ class Content extends Component {
   render() {
 
     return (
-      <div className="content">
+      <div className="content" >
         <CenterMode />
         <BodyNews query='technology' />
       </div>
