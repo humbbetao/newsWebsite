@@ -4,14 +4,11 @@ import './css/Logo.css'
 class Logo extends Component {
     render() {
         return (
-
-
-            <h1 class="float-l">
+            <h1 className="navbar-brand">
                 <Link className="navbar-brand" to="/" >
                     Cyber News
-            </Link>
+                </Link>
             </h1>
-
         );
     }
 }

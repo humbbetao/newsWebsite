@@ -8,9 +8,7 @@ class Header extends Component {
       <header>
         <Menu/>
       </header>
-      // <nav className="header">
-      //     <Menu />
-      // </nav>
+   
     );
   }
 }

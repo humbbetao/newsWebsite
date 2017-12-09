@@ -5,13 +5,14 @@ import './css/MenuItens.css';
 class MenuItens extends Component {
     render() {
         return (
-            <nav class="float-r">
-                <ul className="list-auto nav navbar-nav">
+            <nav className="float-r nav navbar-nav">
+                <ul className="list-auto">
                     {this.props.list.map((item, id) =>
                         <ItemMenu key={id} itemName={item.nome} url={item.url} />
                     )}
                 </ul>
-            </nav >
+
+            </nav>
         );
     }
 }
