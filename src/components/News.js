@@ -4,17 +4,12 @@ import NavbarLeft from './Content/NavbarLeft';
 import Comments from './Content/Comments';
 import './css/newsBody.css';
 
-// import SearchNews from './SearchNews'
-
 const urlForSearch = headline =>
-
     'http://content.guardianapis.com/search?show-elements=all&show-fields=all&q=' + headline + '&api-key=4e95ee67-2a00-4f2b-a66a-f5288cf2934f'
-
 
 class News extends Component {
     constructor(props) {
         super(props);
-        console.log(props);
     }
 
 
@@ -68,8 +63,8 @@ class News extends Component {
         }
     }
     componentDidMount() {
-        console.log(this.props);
-        console.log(this.props.params.news);
+        // console.log(this.props);
+        // console.log(this.props.params.news);
 
         fetch(urlForSearch(this.props.params.title))
             .then(response => {
@@ -86,7 +81,7 @@ class News extends Component {
             })
     }
     render() {
-        console.log(this.state.response);
+        // console.log(this.state.response);
         var response = this.state.response.results[0];
         var published = new Date(response.fields.lastModified);
         return (

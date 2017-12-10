@@ -1,32 +1,21 @@
 import React, { Component } from 'react';
-import { bindActionCreators } from 'redux';
-import { connect } from 'react-redux';
-import * as searchActions from '../../actions/search';
-import { Redirect } from 'react-router';
+// import { bindActionCreators } from 'redux';
+// import { connect } from 'react-redux';
+// import * as searchActions from '../../actions/search';
+import { browserHistory } from 'react-router';
 import './css/BarSearch.css'
 
 class BarSearch extends Component {
     constructor(props) {
         super(props);
-        console.log(props);
         this.state = {
             query: '',
         }
         this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
+        // this.handleSubmit = this.handleSubmit.bind(this);
     }
     handleChange(event) {
         this.setState({ query: event.target.value });
-        console.log(this.state.query)
-    }
-
-    handleSubmit(event) {
-        // this.props.searchTerm(this.state.query);
-        // this.setState({ query: event.target.value });
-        console.log(this.state.query);
-        <Redirect to={'news/:'.concat(this.state.query)} />;
-        // event.preventDefault();
-        // this.setState({ query: '' });
     }
 
     render() {
@@ -39,7 +28,7 @@ class BarSearch extends Component {
                     />
 
                     <span className="input-group-btn">
-                        <button type="submit" className="btn input-lg" id="searchButton" onClick={this.handleSubmit}>
+                        <button type="submit" className="btn input-lg" id="searchButton" onClick={() => browserHistory.push(`/search/query=${this.state.query}`)}  >
                             <span className="glyphicon glyphicon-search"></span>
                         </button>
                     </span>
@@ -50,12 +39,12 @@ class BarSearch extends Component {
     }
 }
 
+// const mapStateToProps = state => ({
+//     query: state.query,
+// });
 
-const mapStateToProps = state => ({
-    query: state.query,
-});
+// const mapDispatchToProps = dispatch =>
+//     bindActionCreators(searchActions, dispatch);
 
-const mapDispatchToProps = dispatch =>
-    bindActionCreators(searchActions, dispatch);
-
-export default connect(mapStateToProps, mapDispatchToProps)(BarSearch);
+// export default connect(mapStateToProps, mapDispatchToProps)(BarSearch);
+export default BarSearch;

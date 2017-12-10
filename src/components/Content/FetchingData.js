@@ -58,7 +58,7 @@ const fetchingData = (url) => (Comp) =>
         }
 
         componentDidMount() {
-            console.log(url);
+            // console.log(url);
             this.setState({ isLoading: true });
 
             fetch(url)

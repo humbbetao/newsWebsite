@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
 import ItensListContaint from './ItensListContaint';
 
-const urlForSearch = (query, page) =>
+const urlForSearch = (query) =>
     'http://content.guardianapis.com/search?show-elements=all&show-fields=all&q=' + query + '&api-key=4e95ee67-2a00-4f2b-a66a-f5288cf2934f'
 
 class ListNews extends Component {
@@ -59,8 +58,8 @@ class ListNews extends Component {
     }
 
     componentDidMount() {
-        console.log(this.props);
-        console.log(urlForSearch(this.props.query));
+        // console.log(this.props);
+        // console.log(urlForSearch(this.props.query));
         fetch(urlForSearch(this.props.query))
             .then(response => {
                 if (!response.ok) {
@@ -85,19 +84,7 @@ class ListNews extends Component {
                         return <ItensListContaint key={id} new={value} />
                     })}
                 </ul>
-                <div class="pagination">
-                    <Link to={"pages/" + this.state.page_index - 1}> &laquo;
-                    </Link>
-                    {this.state.pages.map((value, id) => {
 
-                        return (<Link key={id} to={"pages/" + value}> {value}
-                        </Link>)
-
-                    })}
-                    <Link to={"pages/" + this.state.page_index + 1}> &raquo;
-                    </Link>
-                    
-                    </div>
             </div>
         );
     }

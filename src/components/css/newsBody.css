@@ -1,6 +1,7 @@
-newsBody{
+.newsBody{
     font-family: 'Belgrano-Regular';
-    
+    padding-top: 72px;
+
     
 }
 .newsBody article {
