@@ -1,4 +1,3 @@
-
 .containerBody {
     text-decoration: None;
     margin: 0px;
@@ -9,11 +8,9 @@
     text-decoration: none;
 }
 
-
 a .nounderline:link {
     text-decoration: none;
 }
-
 
 .article_body_news img {
     width: 100%;
@@ -23,6 +20,3 @@ a .nounderline:link {
     display: block;
     margin: 0 auto;
 }
-
-
-

@@ -80,10 +80,8 @@ class News extends Component {
         var response = this.state.response.results[0];
         var published = new Date(response.fields.lastModified);
         return (
-            <div className="newsBody">
-                <NavbarLeft />
-                
-                <div className="col-lg-6" >
+            <div className="content">              
+                <div className="col-lg-6 col-md-12 col-sm-12" id="main-content" >
                     <article className="article_news">
                         <h1 className="article_title_news">
                             {response.fields.headline}
@@ -103,7 +101,7 @@ class News extends Component {
                     </article>
                     <Comments />
                 </div>
-
+                <NavbarLeft />
                 <NavbarRight />
             </div>
         );

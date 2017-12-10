@@ -59,44 +59,44 @@
     color:#E81123;
 }
 
-@media screen and (max-width: 1024px) {
-    .media {
-        width: 100%;
+/* @media screen and (max-width: 1024px) { */
+    /* .media { */
+        /* width: 100%; */
         /* display: grid; */
-    }
+    /* } */
     
-    .media-right img {
-        height: 100%;
-        width: 100%;    
+    /* .media-right img { */
+        /* height: 100%; */
+        /* width: 100%;     */
         /* max-width: 100px; */
-        max-height: 100px;
+        /* max-height: 100px; */
         /* display: block; */
-    }
-    .media-body {
-        height: 100%;
-        width: 100%;    
+    /* } */
+    /* .media-body { */
+        /* height: 100%; */
+        /* width: 100%;     */
         /* max-width: 100px; */
-        max-height: 100px;
-        display: block;
-    }
-}
+        /* max-height: 100px; */
+        /* display: block; */
+    /* } */
+/* } */
 
 
 
-@media screen and (max-width: 991px) {
-    .media-right{
+/* @media screen and (max-width: 991px) { */
+    /* .media-right{ */
         /* width: 40%; */
         /* height: 40%; */
         /* max-width: 100px; */
         /* max-height: 100px; */
-        float: left;
-    }
+        /* float: left; */
+    /* } */
 
-    .media-body{
+    /* .media-body{ */
         /* height: 0%; */
-        width: 40%;
-        float:right;
-    }    
+        /* width: 40%; */
+        /* float:right; */
+    /* }     */
    
-}
+/* } */
 

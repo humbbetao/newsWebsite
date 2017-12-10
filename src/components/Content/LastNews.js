@@ -6,7 +6,7 @@ class LastNews extends Component {
     render() {
 
         return (
-            <div className="col-lg-6 col-md-12 col-sm-12" id="center">
+            <div className="col-lg-6 col-md-12 col-sm-12" id="main-content">
                 <div className="middle_content">
                     <h2>What’s Hot</h2>
                     <ListNews query={this.props.query} />
