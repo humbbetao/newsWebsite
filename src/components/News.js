@@ -93,7 +93,7 @@ class News extends Component {
                             Published on {published.toDateString()}
                         </p>
                         <div className="article_body_news">
-                            <img src={response.fields.thumbnail} alt="" />
+                            <img src={response.fields.thumbnail} alt={response.fields.headline} title={response.fields.headline} />
 
                             <div dangerouslySetInnerHTML={{ __html: response.fields.body }} />
                         </div>

@@ -1,4 +1,6 @@
-.error{
+
+
+.contactUs{
     text-align: center;
     display: block;
     margin-bottom: 20px;
@@ -7,7 +9,8 @@
     
 }
 
-.error img{
+.contactUs img{
     width: 50%;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
+    
 }

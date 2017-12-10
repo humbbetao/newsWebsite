@@ -12,6 +12,7 @@ import News from './components/News';
 import Search from './components/Search';
 import store from './store';
 import NotFound from './components/pages/NotFound';
+import ContactUs from './components/pages/ContactUs';
 import './App.css';
 
 class App extends Component {
@@ -27,6 +28,7 @@ class App extends Component {
             <Route path='computers' component={Computers} />
             <Route path='mobile' component={Mobile} />
             <Route path='videoGames' component={VideoGames} />
+            <Route path='contactUs/' component={ContactUs} />
             <Route path="*" component={NotFound} />
           </Route>
         </Router>
