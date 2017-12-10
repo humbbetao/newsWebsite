@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Quantify Bold';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Quantify Bold'), url('./fonts/Quantify Bold v2.6.ttf') format('truetype');
+    /* IE9 Compat Modes */
+}
+
+@font-face {
+    font-family: 'Belgrano-Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Belgrano-Regular'), url('./fonts/Belgrano-Regular.ttf') format('truetype');
+    /* IE9 Compat Modes */
+}
+
+@font-face {
+    font-family: 'Domine-Bold';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Domine-Bold'), url('./fonts/Domine-Bold.ttf') format('truetype');
+    /* IE9 Compat Modes */
+}
+
+@font-face {
+    font-family: 'Domine-Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Domine-Regular'), url('./fonts/Domine-Regular.ttf') format('truetype');
+    /* IE9 Compat Modes */
+}
+
+body {
+    font-family: 'Domine-Regular';
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}

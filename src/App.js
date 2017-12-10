@@ -8,10 +8,9 @@ import Mobile from './components/pages/Mobile'
 import VideoGames from './components/pages/VideoGames'
 import News from './components/News';
 import Search from './components/Search';
-
 import store from './store';
-
 import { Router, Route, browserHistory, IndexRoute } from 'react-router';
+import './App.css';
 
 class App extends Component {
   render() {
