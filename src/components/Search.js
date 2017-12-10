@@ -9,12 +9,11 @@ class News extends Component {
 
         return (
             <div className="newsBody">
-                <NavbarLeft />
-                <div className="col-lg-6" >
-
+                <div className="col-lg-6 col-md-12 col-sm-12" id="main-content" >
                     <h1>Results for: {this.props.params.title}</h1>
                     <ListNews query={this.props.params.title} />
                 </div>
+                <NavbarLeft />
                 <NavbarRight />
             </div>
         );
