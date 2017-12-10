@@ -1,0 +1,12 @@
+.error{
+    text-align: center;
+    display: block;
+    widows: 700px;
+    height: 1000px;
+    /* padding-top: 200px; */
+    
+}
+
+.error img{
+    width: 50%;
+}

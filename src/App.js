@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
+import { Router, Route, browserHistory, IndexRoute } from 'react-router';
+
 import Home from './components/pages/Home';
 import Content from './components/Content';
 import Technology from './components/pages/Technology'
@@ -9,7 +11,7 @@ import VideoGames from './components/pages/VideoGames'
 import News from './components/News';
 import Search from './components/Search';
 import store from './store';
-import { Router, Route, browserHistory, IndexRoute } from 'react-router';
+import NotFound from './components/pages/NotFound';
 import './App.css';
 
 class App extends Component {
@@ -25,6 +27,7 @@ class App extends Component {
             <Route path='computers' component={Computers} />
             <Route path='mobile' component={Mobile} />
             <Route path='videoGames' component={VideoGames} />
+            <Route path="*" component={NotFound} />
           </Route>
         </Router>
       </Provider>

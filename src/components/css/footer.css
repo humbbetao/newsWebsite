@@ -1,9 +1,10 @@
 #footer {
-    float: left;
+    /* float: left; */
     display: inline;
-    width: 100%;
+    /* width: 100%; */
     display: inline-block;
     font-family: 'Domine-Regular';
+    /* float:bottom; */
 }
 
 .footer_top {
