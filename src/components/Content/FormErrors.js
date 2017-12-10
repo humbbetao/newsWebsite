@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './css/formErrors.css'
 const FormErrors = ({ formErrors }) =>
     <div className='formErrors'>
         {Object.keys(formErrors).map((fieldName, i) => {

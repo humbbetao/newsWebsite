@@ -80,27 +80,41 @@ class News extends Component {
         var response = this.state.response.results[0];
         var published = new Date(response.fields.lastModified);
         return (
-            <div className="content">              
-                <div className="col-lg-6 col-md-12 col-sm-12" id="main-content" >
-                    <article className="article_news">
-                        <h1 className="article_title_news">
-                            {response.fields.headline}
-                        </h1>
-                        <h5 className="trailText">{response.fields.trailText}</h5>
-                        <p className="published">
-                            Published on {published.toDateString()}
-                        </p>
-                        <div className="article_body_news">
-                            <img src={response.fields.thumbnail} alt={response.fields.headline} title={response.fields.headline} />
+            <div className="content">
+                {this.state.response.status === 'ok' ?
+                    <div className="col-lg-6 col-md-12 col-sm-12 newsBody" id="main-content" >
 
-                            <div dangerouslySetInnerHTML={{ __html: response.fields.body }} />
-                        </div>
-                        <p className="col-lg-12 author_news">
-                            Author: {response.fields.byline}
-                        </p>
-                    </article>
-                    <Comments />
-                </div>
+
+                        <article className="article_news">
+                            <h1 className="article_title_news">
+                                {response.fields.headline}
+                            </h1>
+                            <h5 className="trailText">{response.fields.trailText}</h5>
+                            <p className="published">
+                                Published on {published.toDateString()}
+                            </p>
+                            <div className="article_body_news">
+                                <img src={response.fields.thumbnail} alt={response.fields.headline} title={response.fields.headline} />
+
+                                <div dangerouslySetInnerHTML={{ __html: response.fields.body }} />
+                            </div>
+                            <p className="col-lg-12 author_news">
+                                Author: {response.fields.byline}
+                            </p>
+                        </article>
+                        <Comments />
+                    </div>
+                    :
+                    <div className="col-lg-6 col-md-12 col-sm-12 newsBody" id="main-content" >
+                        <article className="article_news">
+                            <h1 className="article_title_news">
+                                Error 400, Bad request
+                            </h1>
+                            <h5 className="trailText">The request could not be understood by the server due to malformed syntax.
+                             The client SHOULD NOT repeat the request without modifications. </h5>
+                        </article>
+                    </div>
+                }
                 <NavbarLeft />
                 <NavbarRight />
             </div>

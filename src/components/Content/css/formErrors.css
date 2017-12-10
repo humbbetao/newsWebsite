@@ -1,0 +1,14 @@
+.formErrors p {
+    border: 1px solid #D50000;
+    border-radius: 5px;
+    padding: 5px;
+    width: 290px;
+    background-color: #EF5350;
+    color:#fff;
+}
+
+.formErrors{
+    display: inline-block;
+    text-align: center;
+
+}
