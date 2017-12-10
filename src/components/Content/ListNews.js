@@ -53,8 +53,7 @@ class ListNews extends Component {
                 }
             ]
         },
-        pages: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'],
-        page_index: 1
+        error: '',
     }
 
     componentDidMount() {
@@ -63,9 +62,13 @@ class ListNews extends Component {
         fetch(urlForSearch(this.props.query))
             .then(response => {
                 if (!response.ok) {
-                    throw Error("Network request failed")
+                    this.setState({
+                        error: "Network request failed"
+                    })
+                    // throw Error("Network request failed");
+                } else {
+                    return response
                 }
-                return response
             })
             .then(res => res.json())
             .then(res => {
@@ -80,9 +83,12 @@ class ListNews extends Component {
         return (
             <div>
                 <ul className="featured_nav">
-                    {this.state.response.results.map((value, id) => {
-                        return <ItensListContaint key={id} new={value} />
-                    })}
+                    {this.state.error === '' ?
+                        this.state.response.results.map((value, id) => {
+                            return <ItensListContaint key={id} new={value} />
+                        })
+                        : <h1>{this.state.error}</h1>
+                    }
                 </ul>
 
             </div>

@@ -6,7 +6,7 @@ class SliderItem extends Component {
         return (
             <div className="single_iteam">
                 <Link className="slider_img" to={headline} >
-                    <img src={this.props.value.fields.thumbnail} alt="" />
+                    <img src={this.props.value.fields.thumbnail} alt={this.props.value.webTitle} />
 
                     <h2 className="slider_title">
                         {this.props.value.webTitle}

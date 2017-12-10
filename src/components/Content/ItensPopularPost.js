@@ -7,11 +7,11 @@ class ItensPopularPost extends Component {
         return (
             <li>
                 <div className="media">
-                    <Link className="media-right" to={'/news/' + headline } >
-                        <img src={this.props.value.fields.thumbnail} alt="" />
+                    <Link className="media-right" href={'/news/' + headline } >
+                        <img src={this.props.value.fields.thumbnail} alt={this.props.value.webTitle} />
                     </Link>
                     <div className="media-body">
-                        <Link className="catg_title" to={'/news/' + headline } >
+                        <Link className="catg_title" href={'/news/' + headline } >
                             {this.props.value.webTitle}
                         </Link>
                     </div>

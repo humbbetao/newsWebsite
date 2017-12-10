@@ -10,13 +10,13 @@ class ItensListContaint extends Component {
                 <article className="featured_article">
                     <div className="article_body">
                         <Link to={'news/'.concat(headline)} >
-                            <img src={this.props.new.fields.thumbnail} alt="" />
+                            <img src={this.props.new.fields.thumbnail} alt={headline} />
                         </Link>
                     </div>
                     <div className="article_section">
                         <div className="article_title">
                             <Link to={'news/'.concat(headline)} >
-                                <div dangerouslySetInnerHTML={{ __html: this.props.new.fields.headline }} />
+                                <div dangerouslySetInnerHTML={{ __html: headline }} />
                             </Link>
                         </div>
                         <div className="article_trailtex">

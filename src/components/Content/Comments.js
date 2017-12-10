@@ -66,26 +66,28 @@ class Comment extends Component {
     }
 
     addNewComment = (e) => {
-        // e.preventDefault();
-
         if (this.state.formValid) {
             this.props.addComment(this.state.user, this.state.email, this.state.comment);
             this.setState({ user: '', email: '', comment: '' })
         }
+        // return false;
+        e.preventDefault();
+        e.stopPropagation();
     };
 
     render() {
         // console.log(this.props.todos)
         return (
             <div className="formComment">
-                {/* <ul> */}
+                <div className="comments">
                 {this.props.todos.map(todo => (
-                    <div key={todo.id}>
-                        <p><span class="glyphicon glyphicon-user"></span>  {todo.user}</p>
-                        <p>Comment: {todo.comment}</p>
+                    <div key={todo.id} className="comments row">
+                        <div className="comment_user "><span className="glyphicon glyphicon-user"></span> {todo.user}</div>
+                        <div className="comment_text ">{todo.comment}</div>
                     </div>
                 ))}
-                {/* </ul> */}
+                </div>
+                
                 <CounterComments />
                 <h3>Leave a reply</h3>
                 <FormsErrors formErrors={this.state.formErrors} />

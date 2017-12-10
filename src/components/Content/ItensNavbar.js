@@ -7,11 +7,11 @@ class ItensNavbar extends Component {
         return (
             <li>
                 <figure >
-                    <Link className="effect-lily" to={headline} >
-                        <img src={this.props.new.fields.thumbnail} alt="" />
+                    <Link className="effect-lily"  href={headline}  >
+                        <img src={this.props.new.fields.thumbnail} alt={this.props.new.webTitle} />
                     </Link>
                     <figcaption >
-                        <Link className="text_lilly" to={headline} >
+                        <Link className="text_lilly" href={headline} >
                             {this.props.new.webTitle}
                         </Link>
                     </figcaption>
