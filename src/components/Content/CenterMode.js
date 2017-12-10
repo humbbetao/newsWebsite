@@ -19,15 +19,17 @@ class CenterMode extends Component {
     render() {
         const settings = {
             className: 'sampleArrows',
-            infinite: true,
+            // dots: true, is not working;
             speed: 5000,
-            autoplay: true,
-            autoplaySpeed: 2000,
-            dots: true,
+            autoplaySpeed: 5000,
             centerMode: true,
             slidesToShow: 1,
             slidesToScroll: 1,
             variableWidth: true,
+            initialSlide: 3,
+            autoplay: true,
+            infinite: true,
+           
         };
         return (
             < div className="slider" >

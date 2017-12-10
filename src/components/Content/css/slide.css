@@ -16,15 +16,27 @@
 
 .sampleArrows {
     /* z-index: 5; */
-    width: 100%;
-    /* display:  !important; */
+    /* width: 100%; */
+    display: block;
+    /* display: inline;/ */
+    max-height: 300px;
+    /* height: 300px !important; */
 }
 
-.slider{
-    border-bottom:20px;
+.slider {
+    border-bottom: 20px;
     /* top:60px; */
-    margin-top:72px;
+    margin-top: 72px;
+    max-height: 300px;
+    height: 300px !important;
 }
+
+.slick-list{
+    max-height: 300px;
+    height: 300px !important;
+    padding: 0px !important;
+}
+
 .sliderBar {
     border-radius: 0px;
     background-color: #0063B1;
@@ -97,10 +109,11 @@
     font-size: 13pt;
 }
 
-.slick-arrow .slick-next{
+.slick-arrow .slick-next {
     display: none !important;
-    
 }
-.slick-next, .slick-prev{
+
+.slick-next,
+.slick-prev {
     display: none !important;
 }

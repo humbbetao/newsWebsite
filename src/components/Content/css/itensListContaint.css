@@ -191,34 +191,3 @@ figure.effect-lily a:hover img {
     transform: translate3d(0, 0, 0)
 }
 
-/* @media screen and (max-width: 1024px) {
-    .featured_article {
-        position: relative;
-        height: 100%;
-    }
-    .article_section {
-        display: flex;
-        align-items: center;
-        padding: 0px;
-        display: inline-block;
-        height: 100%;
-        vertical-align: middle !important;
-        /* max-width:400px; */
-        /* height: 120px; */
-        /* max-height: 150px; */
-        /* max-height: 100%; */
-    /* } */
-    /* .article_body { */
-        /* max-width: 400px; */
-        /* padding: 0px; */
-        /* margin: 0px; */
-        /* border: 0px; */
-        /* padding-left: 20px; */
-    /* } */
-    /* .article_title { */
-        /* height: auto; */
-    /* } */
-    /* .article_trailtex { */
-        /* height: auto; */
-    /* } */
-/* } */
