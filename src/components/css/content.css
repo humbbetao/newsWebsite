@@ -55,9 +55,8 @@
         text-align: center;
         
     }
-    display: block; /*for the img inside your div */  
-    margin-left: auto ;
-    margin-right: auto ;
+    
+    
     
     #main-content {
         left: 25%; /*Width of #left-sidebar*/

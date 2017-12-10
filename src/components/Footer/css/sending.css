@@ -1,5 +1,7 @@
 .container-1>input{
     width: 10%;
+    padding-left: 10%;
+    margin-left: 10%;
 
 }
 
@@ -8,3 +10,9 @@
     color: #0063B1;
 }
 
+
+.footer_widget .input-group{
+    padding-left: 5%;
+    margin: 0px;
+    /* margin-left: 10%; */
+}
